@@ -1,0 +1,11 @@
+{
+    "name": "rixin/web",
+    "description": "RIXIN website",
+    "require": {
+        "php": ">=7.4",
+        "phpmailer/phpmailer": "^6.9"
+    },
+    "config": {
+        "optimize-autoloader": true
+    }
+}
