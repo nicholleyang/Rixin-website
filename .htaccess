@@ -1,0 +1,22 @@
+# RIXIN site URL canonicalization
+RewriteEngine On
+
+# Force HTTPS
+RewriteCond %{HTTPS} off
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Prefer bare domain (rixin-dl.com over www)
+RewriteCond %{HTTP_HOST} ^www\.rixin-dl\.com$ [NC]
+RewriteRule ^ https://rixin-dl.com%{REQUEST_URI} [L,R=301]
+
+# Homepage: strip index.html from URL bar
+RewriteCond %{THE_REQUEST} \s/+index\.html[\s?] [NC]
+RewriteRule ^index\.html$ / [L,R=301]
+
+RewriteCond %{THE_REQUEST} \s/+zh/index\.html[\s?] [NC]
+RewriteRule ^zh/index\.html$ /zh/ [L,R=301]
+
+RewriteCond %{THE_REQUEST} \s/+ja/index\.html[\s?] [NC]
+RewriteRule ^ja/index\.html$ /ja/ [L,R=301]
+
+DirectoryIndex index.html

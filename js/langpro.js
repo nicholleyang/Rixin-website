@@ -1,26 +1,30 @@
+function setHtml(id, value) {
+  var el = document.getElementById(id);
+  if (el) el.innerHTML = value;
+}
+
 function changeLanguage(language) {
 
   // 根据选择的语言切换内容
   if (language === 'zh') {
-    tab1.innerHTML = '主页&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'
-    tab2.innerHTML = '关于我们'
-    tab3.innerHTML = '业务范围&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'
-    tab4.innerHTML = '证书'
-    tab5.innerHTML = '制造能力'
-    tab6.innerHTML = '设计'
-    tab7.innerHTML = '模具零部件'
-    tab8.innerHTML = '注塑模具'
-    tab9.innerHTML = '冲压模具'
-    tab10.innerHTML = '压铸模具'
-    tab11.innerHTML = '行业应用'
-    tab12.innerHTML = '汽车零部件'
-    tab13.innerHTML = '模具零部件'
-    tab14.innerHTML = '医疗零部件'
-    tab15.innerHTML = '电器'
-    tab16.innerHTML = '注塑成型'
-    tab17.innerHTML = '关于日信&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'
-    tab18.innerHTML = '主要设备'
-    tab19.innerHTML = '联系我们&nbsp;&nbsp;&nbsp;'
+    setHtml('tab1', '主页&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;')
+    setHtml('tab2', '关于我们')
+    setHtml('tab3', '业务范围&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;')
+    setHtml('tab4', '证书')
+    setHtml('tab5', '制造能力')
+    setHtml('tab6', '设计')
+    setHtml('tab7', '模具零部件')
+    setHtml('tab8', '注塑模具')
+    setHtml('tab9', '冲压模具')
+    setHtml('tab10', '压铸模具')
+    setHtml('tab11', '行业应用')
+    setHtml('tab12', '汽车零部件')
+    setHtml('tab13', '模具零部件')
+    setHtml('tab14', '医疗零部件')
+    setHtml('tab15', '电器')
+    setHtml('tab16', '注塑成型')
+    setHtml('tab17', '关于我们&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;')
+    setHtml('tab19', '联系我们&nbsp;&nbsp;&nbsp;')
 
     page3.innerHTML = '产品'
     type1.innerHTML = '模具零部件'
@@ -29,29 +33,30 @@ function changeLanguage(language) {
     type4.innerHTML = '电器'
 
 
-    companyName.innerHTML = '日信精密模塑有限公司'
-    address.innerHTML = '办公地址: 中国 辽宁大连开发区东北七街华盛达模具园 10-2-8<br>电话: 0411-39014829 / 0411-39014821<br>邮箱: info@rixin-dl.com<br>网站: www.rixin-dl.com'
+    setHtml('companyName', '日信精密模塑有限公司')
+    setHtml('footerPhone', '电话: 0411-39014829 / 0411-39014821')
+    setHtml('footerEmail', '邮箱: <a href="mailto:info@rixin-dl.com">info@rixin-dl.com</a>')
+    setHtml('address', '办公地址: 中国 辽宁大连开发区东北七街华盛达模具园 10-2-8')
 
   } else if (language === 'en') {
-    tab1.innerHTML = 'Home'
-    tab2.innerHTML = 'About Us'
-    tab3.innerHTML = 'Our Capabilities'
-    tab4.innerHTML = 'Certifications'
-    tab5.innerHTML = 'Capabilities'
-    tab6.innerHTML = 'Design'
-    tab7.innerHTML = 'Mould Parts'
-    tab8.innerHTML = 'Injection Molding'
-    tab9.innerHTML = 'Stamping Die'
-    tab10.innerHTML = 'Die Casting'
-    tab11.innerHTML = 'Industries'
-    tab12.innerHTML = 'Automotive Parts'
-    tab13.innerHTML = 'Mould Parts'
-    tab14.innerHTML = 'Medical Parts'
-    tab15.innerHTML = 'Appliances'
-    tab16.innerHTML = 'Injection Moulding'
-    tab17.innerHTML = 'About RIXIN'
-    tab18.innerHTML = 'Main Equipment'
-    tab19.innerHTML = 'Contact'
+    setHtml('tab1', 'Home')
+    setHtml('tab2', 'About Us')
+    setHtml('tab3', 'Our Capabilities')
+    setHtml('tab4', 'Certifications')
+    setHtml('tab5', 'Capabilities')
+    setHtml('tab6', 'Design')
+    setHtml('tab7', 'Mould Parts')
+    setHtml('tab8', 'Injection Molding')
+    setHtml('tab9', 'Stamping Die')
+    setHtml('tab10', 'Die Casting')
+    setHtml('tab11', 'Industries')
+    setHtml('tab12', 'Automotive Parts')
+    setHtml('tab13', 'Mould Parts')
+    setHtml('tab14', 'Medical Parts')
+    setHtml('tab15', 'Appliances')
+    setHtml('tab16', 'Injection Moulding')
+    setHtml('tab17', 'About Us')
+    setHtml('tab19', 'Contact')
 
     page3.innerHTML = 'Products'
     type1.innerHTML = 'MOULD PARTS'
@@ -59,29 +64,30 @@ function changeLanguage(language) {
     type3.innerHTML = 'Medical Parts'
     type4.innerHTML = 'Appliances'
 
-    companyName.innerHTML = 'RIXIN Precision Molding'
-    address.innerHTML = 'Office: No. 10-2-8, Huashengda Mould Park, Northeast 7th Street, Dalian Development Zone, Liaoning, China<br>China Tel : 0411-39014829 / 0411-39014821<br>Email: info@rixin-dl.com<br>Web : www.rixin-dl.com'
+    setHtml('companyName', 'RIXIN Precision Molding')
+    setHtml('footerPhone', 'Tel: 0411-39014829 / 0411-39014821')
+    setHtml('footerEmail', 'Email: <a href="mailto:info@rixin-dl.com">info@rixin-dl.com</a>')
+    setHtml('address', 'Office: No. 10-2-8, Huashengda Mould Park, Northeast 7th Street, Dalian Development Zone, Liaoning, China')
 
   } else if (language === 'ja') {
-    tab1.innerHTML = 'ホーム';
-    tab2.innerHTML = '会社概要';
-    tab3.innerHTML = '私たちの能力';
-    tab4.innerHTML = '認定資格';
-    tab5.innerHTML = 'キャパビリティ';
-    tab6.innerHTML = 'デザイン';
-    tab7.innerHTML = '金型パーツ';
-    tab8.innerHTML = '射出成形';
-    tab9.innerHTML = 'スタンピングダイ';
-    tab10.innerHTML = 'ダイキャスティング';
-    tab11.innerHTML = '業界・市場';
-    tab12.innerHTML = '自動車部品';
-    tab13.innerHTML = '金型パーツ';
-    tab14.innerHTML = '医療部品';
-    tab15.innerHTML = '家電製品';
-    tab16.innerHTML = '射出成形';
-    tab17.innerHTML = 'RIXINについて';
-    tab18.innerHTML = '主要設備';
-    tab19.innerHTML = 'お問い合わせ';
+    setHtml('tab1', 'ホーム');
+    setHtml('tab2', '会社概要');
+    setHtml('tab3', '私たちの能力');
+    setHtml('tab4', '認定資格');
+    setHtml('tab5', 'キャパビリティ');
+    setHtml('tab6', 'デザイン');
+    setHtml('tab7', '金型パーツ');
+    setHtml('tab8', '射出成形');
+    setHtml('tab9', 'スタンピングダイ');
+    setHtml('tab10', 'ダイキャスティング');
+    setHtml('tab11', '業界・市場');
+    setHtml('tab12', '自動車部品');
+    setHtml('tab13', '金型パーツ');
+    setHtml('tab14', '医療部品');
+    setHtml('tab15', '家電製品');
+    setHtml('tab16', '射出成形');
+    setHtml('tab17', '私たちについて');
+    setHtml('tab19', 'お問い合わせ');
 
     page3.innerHTML = '製品';
     type1.innerHTML = '金型部品'; // MOULD PARTS的日语翻译
@@ -90,8 +96,10 @@ function changeLanguage(language) {
     type4.innerHTML = '家電'; // Appliances的日语翻译
 
 
-    companyName.innerHTML = 'RIXIN PRECISION MOLDING日新精密成形'
-    address.innerHTML = 'オフェンス：中国　遼寧省大連市　開発区　東北 7 番街　華盛達モールド パーク10-2-8<br>電話番号: 0411-39014829 / 0411-39014821<br>メールアドレス: info@rixin-dl.com<br>ネットウェーブ: www.rixin-dl.com'
+    setHtml('companyName', 'RIXIN PRECISION MOLDING日新精密成形')
+    setHtml('footerPhone', '電話: 0411-39014829 / 0411-39014821')
+    setHtml('footerEmail', 'メール: <a href="mailto:info@rixin-dl.com">info@rixin-dl.com</a>')
+    setHtml('address', 'オフィス: 中国 遼寧省大連市 開発区 東北七街 華盛達模具園 10-2-8')
 
   }
 }

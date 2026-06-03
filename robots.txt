@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.rixin-dl.com/sitemap.xml
+Sitemap: https://rixin-dl.com/sitemap.xml

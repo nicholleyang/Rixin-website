@@ -1,0 +1,194 @@
+{
+  "posts": [
+    {
+      "slug": "what-is-wire-edm-machining",
+      "image": "images/tech/Wire EDM.png",
+      "related": "wire-edm.html",
+      "en": {
+        "title": "What Is Wire EDM Machining?",
+        "meta": "Learn how wire EDM machining works, when to use it for molds and precision parts, and how RIXIN supports export programs from Dalian.",
+        "paragraphs": [
+          "Wire EDM (electrical discharge machining) uses a thin conductive wire to cut complex profiles in hardened tooling steels and other conductive materials. The process is non-contact, which helps preserve delicate walls, narrow slots, and sharp internal corners that are difficult to achieve with conventional milling alone.",
+          "For mold programs, wire EDM is commonly applied to inserts, punches, cavities, and precision mold components where profile accuracy and surface integrity matter. Because cutting happens without mechanical force, thin sections and fine details are less likely to deflect during machining.",
+          "RIXIN applies wire EDM alongside CNC machining, EDM, and grinding to support automotive, medical, and industrial export projects. Early process planning helps match the right technology to each feature so tolerances, lead time, and cost stay aligned with your drawing requirements."
+        ],
+        "related_label": "Explore Wire EDM Services",
+        "back_label": "Back to About Us"
+      },
+      "zh": {
+        "title": "什么是慢走丝线切割加工？",
+        "meta": "了解慢走丝线切割的工作原理、在模具与精密零件中的应用场景，以及日信如何支持出口制造项目。",
+        "paragraphs": [
+          "慢走丝线切割（Wire EDM）利用细金属丝对导电材料进行放电加工，可切割淬硬模具钢及其他导电材料中的复杂轮廓。该工艺为非接触加工，有助于保持薄壁、窄槽及内角等铣削难以稳定实现的特征。",
+          "在模具项目中，慢走丝常用于镶件、冲头、型腔及精密模具零部件，对轮廓精度与表面完整性要求较高的部位尤为适用。由于加工过程几乎不产生切削力，细小结构在加工中不易变形。",
+          "日信将慢走丝与 CNC 加工、电火花及磨削相结合，服务汽车、医疗与工业出口项目。通过前期工艺规划，为不同特征匹配合适加工方式，使公差、交期与成本更符合图纸要求。"
+        ],
+        "related_label": "了解慢走丝加工能力",
+        "back_label": "返回关于我们"
+      },
+      "ja": {
+        "title": "ワイヤーEDM加工とは？",
+        "meta": "ワイヤーEDMの原理、金型・精密部品への適用、大連リシンによる輸出向け製造支援について解説します。",
+        "paragraphs": [
+          "ワイヤーEDM（放電加工）は細い導電性ワイヤーで、焼入れ工具鋼などの導電材料に複雑な輪郭を切断します。非接触加工のため、薄肉、狭いスロット、内角など、通常のフライス加工だけでは難しい形状にも適しています。",
+          "金型案件では、インサート、パンチ、キャビティ、精密金型部品など、輪郭精度と表面品質が重要な部位にワイヤーEDMが用いられます。機械的な切削力が小さいため、細部の変形リスクを抑えやすい点が特徴です。",
+          "リシンはワイヤーEDMをCNC加工、EDM、研削と組み合わせ、自動車・医療・産業向けの輸出プログラムを支援します。初期段階での工程設計により、公差、納期、コストを図面要求に沿って最適化します。"
+        ],
+        "related_label": "ワイヤーEDMサービスを見る",
+        "back_label": "会社情報に戻る"
+      }
+    },
+    {
+      "slug": "cnc-milling-vs-wire-edm",
+      "image": "images/tech/CNC.jpeg",
+      "related": "cnc-milling.html",
+      "en": {
+        "title": "CNC Milling vs Wire EDM",
+        "meta": "Compare CNC milling and wire EDM for mold tooling and precision components to choose the right process for your project.",
+        "paragraphs": [
+          "CNC milling removes material with rotating cutters and is ideal for prismatic features, pockets, bosses, and large-volume metal removal. Wire EDM excels at intricate 2D profiles, narrow slots, and hardened components where cutter access or tool pressure would be limiting.",
+          "Many precision mold projects use both processes in sequence: milling establishes primary geometry and datum surfaces, while wire EDM finishes detailed inserts, shut-offs, and fine contours. Selecting the wrong sequence can add rework, so DFM reviews should flag features early.",
+          "RIXIN plans CNC milling and wire EDM as a combined workflow for export customers who need stable tolerances and repeatable quality. The goal is not to favor one technology, but to apply each where it delivers the best outcome for fit, function, and production efficiency."
+        ],
+        "related_label": "Explore CNC Milling Services",
+        "back_label": "Back to About Us"
+      },
+      "zh": {
+        "title": "CNC 铣削与慢走丝线切割对比",
+        "meta": "对比 CNC 铣削与慢走丝在模具工装和精密零件上的适用场景，帮助选择合适工艺。",
+        "paragraphs": [
+          "CNC 铣削通过旋转刀具去除材料，适合棱柱特征、型腔、凸台及大余量去除。慢走丝更适合复杂二维轮廓、窄槽及淬硬件等铣刀难以稳定加工的部位。",
+          "许多精密模具项目会组合两种工艺：铣削建立主要几何与基准面，慢走丝完成镶件细节、封胶面及精细轮廓。若工艺顺序选择不当，容易增加返工，应在 DFM 阶段提前识别关键特征。",
+          "日信将 CNC 铣削与慢走丝作为一体化流程规划，服务需要稳定公差与可重复品质的出口客户。目标不是偏向某一种技术，而是在合适位置发挥各自优势。"
+        ],
+        "related_label": "了解 CNC 铣削能力",
+        "back_label": "返回关于我们"
+      },
+      "ja": {
+        "title": "CNCフライス加工とワイヤーEDMの比較",
+        "meta": "金型ツーリングと精密部品におけるCNCフライスとワイヤーEDMの違いと選定ポイントを解説します。",
+        "paragraphs": [
+          "CNCフライスは回転工具で材料を除去し、角形状、ポケット、ボス、大きな切削量に適しています。ワイヤーEDMは複雑な2D輪郭、狭いスロット、焼入れ部品など、工具アクセスや切削力が制約となる部位に向いています。",
+          "精密金型案件では、両工程を組み合わせることが多く、フライスで主要形状とデータム面を作り、ワイヤーEDMでインサートや細部輪郭を仕上げます。工程順序の誤りは手戻りにつながるため、DFM段階での確認が重要です。",
+          "リシンはCNCフライスとワイヤーEDMを一体型ワークフローとして計画し、安定した公差と再現性を求める輸出顧客を支援します。"
+        ],
+        "related_label": "CNCフライスサービスを見る",
+        "back_label": "会社情報に戻る"
+      }
+    },
+    {
+      "slug": "precision-mold-components-mold-quality",
+      "image": "images/tech/Mould Parts.png",
+      "related": "capabilities.html",
+      "en": {
+        "title": "How Precision Mold Components Affect Mold Quality",
+        "meta": "Understand why precision mold components influence mold life, part quality, and production stability for export programs.",
+        "paragraphs": [
+          "Precision mold components—including cores, inserts, sliders, and cavity details—directly affect flash control, parting-line alignment, and long-term mold durability. Small dimensional deviations can compound into visible part defects or premature wear in high-volume runs.",
+          "Material selection, heat treatment, and finishing processes for mold components must match the expected cycle count and resin behavior. Components machined to tight tolerances help maintain consistent venting, cooling balance, and ejection performance across production batches.",
+          "RIXIN manufactures precision mold components and full mold programs with wire EDM, CNC machining, and supporting processes in Dalian. Integrated in-house execution reduces hand-off risk and helps global customers keep quality expectations traceable from component to finished molding."
+        ],
+        "related_label": "View Manufacturing Capabilities",
+        "back_label": "Back to About Us"
+      },
+      "zh": {
+        "title": "精密模具零部件如何影响模具质量",
+        "meta": "了解精密模具零部件对模具寿命、制品质量及量产稳定性的影响。",
+        "paragraphs": [
+          "精密模具零部件（型芯、镶件、滑块、型腔细节等）直接影响飞边控制、分型面对齐及模具耐久性。微小尺寸偏差在大批量生产中可能累积为外观缺陷或过早磨损。",
+          "零部件材料、热处理与表面处理需匹配目标模次与树脂特性。按严格公差加工的零件有助于保持排气、冷却平衡与顶出性能的一致性。",
+          "日信在大连制造精密模具零部件并提供完整模具方案，结合线切割、CNC 加工等工艺。厂内一体化执行可降低交接风险，帮助出口客户从零件到成型全程追溯品质。"
+        ],
+        "related_label": "查看制造能力",
+        "back_label": "返回关于我们"
+      },
+      "ja": {
+        "title": "精密金型部品が金型品質に与える影響",
+        "meta": "精密金型部品が金型寿命、成形品品質、量産安定性に与える影響を解説します。",
+        "paragraphs": [
+          "コア、インサート、スライダー、キャビティ部品などの精密金型部品は、バリ制御、パーティングライン精度、金型耐久性に直結します。わずかな寸法差も、量産時に外観不良や早期摩耗につながることがあります。",
+          "部品の材質、熱処理、仕上げは目標ショット数と樹脂特性に合わせる必要があります。厳しい公差で加工された部品は、ベント、冷却バランス、突き出し性能の安定に寄与します。",
+          "リシンは大連で精密金型部品と金型プログラムを製造し、ワイヤーEDMやCNC加工を組み合わせています。社内一体型の実行により、輸出顧客の品質要求を部品から成形まで追跡しやすくします。"
+        ],
+        "related_label": "製造能力を見る",
+        "back_label": "会社情報に戻る"
+      }
+    },
+    {
+      "slug": "what-is-tight-tolerance-machining",
+      "image": "images/tech/Precision Grinding.png",
+      "related": "precision-grinding.html",
+      "en": {
+        "title": "What Is Tight Tolerance Machining?",
+        "meta": "Define tight tolerance machining for molds and precision parts, and learn how inspection and process control support export quality.",
+        "paragraphs": [
+          "Tight tolerance machining refers to producing features that hold dimensional limits well beyond standard shop practices—often critical for mold fits, assembly interfaces, and functional mating surfaces. Achieving these tolerances requires stable machines, controlled environments, and disciplined measurement routines.",
+          "Tolerance targets should be tied to function, not specified tighter than necessary. Over-specification increases cost without improving product performance. Process capability reviews, tool path strategy, and post-machining grinding or EDM can all influence final results.",
+          "RIXIN supports tight tolerance machining for mold components and industrial parts with CNC milling, wire EDM, EDM, and precision grinding. Documented inspection and quality systems help export customers validate critical dimensions before parts move to assembly or molding."
+        ],
+        "related_label": "Explore Precision Grinding",
+        "back_label": "Back to About Us"
+      },
+      "zh": {
+        "title": "什么是精密公差加工？",
+        "meta": "说明模具与精密零件中的高公差加工含义，以及检测与过程控制如何支撑出口品质。",
+        "paragraphs": [
+          "精密公差加工指在远超常规车间水平的尺寸限制下制造特征，常见于模具配合面、装配接口及功能贴合面。实现此类公差需要稳定设备、受控环境及规范的测量流程。",
+          "公差目标应结合功能需求设定，避免不必要的过严规格。过度收紧公差会增加成本而不改善产品性能。工艺能力评估、刀具路径及后续磨削或电火花工序都会影响最终结果。",
+          "日信通过 CNC 铣削、慢走丝、电火花与精密磨削支持高公差加工，并以文件化检测与质量体系帮助出口客户在进入装配或注塑前验证关键尺寸。"
+        ],
+        "related_label": "了解精密磨削能力",
+        "back_label": "返回关于我们"
+      },
+      "ja": {
+        "title": "厳密公差加工とは？",
+        "meta": "金型・精密部品における厳密公差加工の意味と、検査・工程管理の重要性を解説します。",
+        "paragraphs": [
+          "厳密公差加工とは、通常の加工より厳しい寸法管理で形状を製造することを指し、金型合わせ面、組立界面、機能面などで重要になります。実現には安定した設備、環境管理、計測ルーティンが必要です。",
+          "公差は機能に基づいて設定すべきで、不要に厳しくするとコストだけが増えます。工程能力、工具経路、研削やEDMなどの後工程も最終精度に影響します。",
+          "リシンはCNCフライス、ワイヤーEDM、EDM、精密研削で厳密公差加工を支援し、文書化された検査と品質体制で輸出顧客の重要寸法確認を支援します。"
+        ],
+        "related_label": "精密研削サービスを見る",
+        "back_label": "会社情報に戻る"
+      }
+    },
+    {
+      "slug": "how-to-choose-precision-mold-manufacturer",
+      "image": "images/tech/Injection.png",
+      "related": "contact.html",
+      "en": {
+        "title": "How to Choose a Precision Mold Manufacturer",
+        "meta": "Key criteria for selecting a precision mold manufacturer for export programs: capability, quality systems, communication, and delivery reliability.",
+        "paragraphs": [
+          "Choosing a precision mold manufacturer starts with verifying technical scope: Can they support your part complexity, materials, tolerances, and volume expectations? Review equipment lists, sample industries, and whether design, tooling, and molding are integrated or outsourced.",
+          "Quality and communication matter as much as machinery. Look for documented process control, responsive engineering support, and clear project milestones. Export programs especially benefit from partners who understand documentation, revision control, and stable production ramp-up.",
+          "RIXIN in Dalian combines mold design, precision components, injection molding, and supporting processes for global OEMs. If you are evaluating suppliers, share drawings early so our team can provide DFM feedback, capability alignment, and a realistic timeline for your program."
+        ],
+        "related_label": "Contact RIXIN for a Quote",
+        "back_label": "Back to About Us"
+      },
+      "zh": {
+        "title": "如何选择精密模具制造商",
+        "meta": "为出口项目选择精密模具制造商的关键标准：能力、质量体系、沟通与交付可靠性。",
+        "paragraphs": [
+          "选择精密模具制造商首先要核实技术范围：是否能支撑零件复杂度、材料、公差及产量预期。查看设备清单、服务行业案例，以及设计、工装与注塑是否一体化或外包。",
+          "品质与沟通与设备同样重要。应关注文件化过程控制、工程响应速度及清晰的项目节点。出口项目尤其需要理解文档、版本管理与稳定量产爬坡的合作伙伴。",
+          "日信位于大连，为全球 OEM 提供模具设计、精密零部件、注塑成型及配套工艺。若您正在评估供应商，欢迎尽早提供图纸，以便团队给出 DFM 建议、能力匹配与可行交期。"
+        ],
+        "related_label": "联系日信获取报价",
+        "back_label": "返回关于我们"
+      },
+      "ja": {
+        "title": "精密金型メーカーの選び方",
+        "meta": "輸出案件向けに精密金型メーカーを選ぶ際のポイント：能力、品質体制、コミュニケーション、納期信頼性。",
+        "paragraphs": [
+          "精密金型メーカー選定では、まず技術範囲を確認します。部品の複雑さ、材料、公差、生産量に対応できるか。設備一覧、業界実績、設計・ツーリング・成形が社内一体か外注かも重要です。",
+          "品質とコミュニケーションは設備と同じくらい重要です。文書化された工程管理、迅速な技術支援、明確なマイルストーンを確認してください。輸出案件では、改版管理と量産立ち上げに慣れたパートナーが有利です。",
+          "大連のリシンは、金型設計、精密部品、射出成形、関連工程を組み合わせてグローバルOEMを支援します。サプライヤー比較中であれば、図面を早めに共有いただき、DFM提案と現実的なスケジュールをご確認ください。"
+        ],
+        "related_label": "お見積りのお問い合わせ",
+        "back_label": "会社情報に戻る"
+      }
+    }
+  ]
+}
