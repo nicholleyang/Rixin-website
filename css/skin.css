@@ -4403,6 +4403,12 @@ body.RIXIN {
 	--rixin-muted: #666666;
 	--rixin-bg: #ffffff;
 	--rixin-header-h: 6.5rem;
+	--rixin-space-section-desktop: 80px;
+	--rixin-space-section-mobile: 5rem;
+	--rixin-space-hero-top-desktop: 100px;
+	--rixin-space-hero-bottom-desktop: 80px;
+	--rixin-space-hero-top-tablet: 11.4rem;
+	--rixin-space-hero-top-mobile: 10.2rem;
 }
 
 body.RIXIN .header .header-inner,
@@ -4464,14 +4470,16 @@ body.RIXIN .header-transparent .navigation > ul > li.current > a:hover {
 
 body.RIXIN .header .navigation > ul > li > a {
 	color: var(--rixin-text);
-	font-size: 1.35rem;
-	font-weight: 600;
-	letter-spacing: 0.01em;
+	font-size: 1.5rem;
+	font-weight: 650;
+	letter-spacing: 0.028em;
+	line-height: 1;
+	white-space: nowrap;
 	text-transform: none;
 }
 
 body.RIXIN .header .navigation > ul > li {
-	margin: 0 0.7rem;
+	margin: 0 0.95rem;
 }
 
 body.RIXIN .header .navigation.nav-right > ul {
@@ -4480,6 +4488,7 @@ body.RIXIN .header .navigation.nav-right > ul {
 	justify-content: flex-start;
 	flex-wrap: nowrap;
 	width: 100%;
+	padding-left: 1.2rem;
 }
 
 body.RIXIN .header .navigation > ul > li.rixin-language-nav,
@@ -4494,14 +4503,16 @@ body.RIXIN .header .navigation > ul > li.rixin-language-nav {
 body.RIXIN .header .navigation > ul > li.rixin-language-nav > a:not(.button) {
 	display: inline-flex;
 	align-items: center;
-	gap: 0.55rem;
-	padding: 0 0.7rem;
-	font-weight: 600;
+	gap: 0.65rem;
+	padding: 0 0.9rem;
+	font-weight: 650;
+	font-size: 1.4rem;
 }
 
 body.RIXIN .header .navigation > ul > li.rixin-language-nav > a:not(.button) .rixin-language-label {
 	line-height: 1;
-	font-size: 1.3rem;
+	font-size: 1.4rem;
+	letter-spacing: 0.02em;
 }
 
 body.RIXIN .header .navigation > ul > li.rixin-language-nav > a:not(.button)::after {
@@ -4535,23 +4546,24 @@ body.RIXIN .rixin-language-trigger-flag {
 }
 
 body.RIXIN .header .navigation > ul > li.rixin-quote-item {
-	margin-left: 0.4rem;
+	margin-left: 0.7rem;
 }
 
 body.RIXIN .header .navigation > ul > li.rixin-quote-item > a.button.rixin-quote-button {
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
-	min-height: 3.6rem;
+	min-height: 3.9rem;
 	margin-top: 0;
-	padding: 0 1.45rem;
+	padding: 0 1.75rem;
 	line-height: 1;
 	border-radius: 999px;
 	border: 1px solid var(--rixin-primary);
 	background: var(--rixin-primary);
 	color: #fff !important;
-	font-size: 1.1rem;
+	font-size: 1.2rem;
 	font-weight: 700;
+	letter-spacing: 0.02em;
 	text-transform: none;
 	box-shadow: 0 8px 18px rgba(0, 51, 102, 0.14);
 	transition: background-color 0.2s ease, border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
@@ -4592,12 +4604,12 @@ body.RIXIN .header .nav-bar-inner {
 	position: relative;
 	display: flex;
 	align-items: center;
-	gap: 2.4rem;
+	gap: 3rem;
 }
 
 body.RIXIN .header .logo {
 	flex: 0 0 auto;
-	margin-right: 1rem;
+	margin-right: 1.4rem;
 }
 
 body.RIXIN .header .navigation.nav-right {
@@ -4831,12 +4843,27 @@ body.RIXIN .navigation > ul > li.rixin-language-nav > .sub-menu li a:hover {
 
 	body.RIXIN .header .navigation.nav-right > ul {
 		display: block;
+		padding-left: 0;
+	}
+
+	body.RIXIN .header .navigation > ul > li > a {
+		font-size: 1.75rem;
+		font-weight: 650;
+		letter-spacing: 0.022em;
+		line-height: 1.35;
+		padding: 0 1.5rem;
 	}
 
 	body.RIXIN .header .navigation > ul > li.rixin-language-nav > a:not(.button) {
 		display: flex;
 		justify-content: space-between;
 		padding: 0 1.5rem;
+		font-size: 1.7rem;
+		gap: 0.7rem;
+	}
+
+	body.RIXIN .header .navigation > ul > li.rixin-language-nav > a:not(.button) .rixin-language-label {
+		font-size: 1.55rem;
 	}
 
 	body.RIXIN .header .navigation > ul > li.rixin-language-nav > .sub-menu {
@@ -4853,9 +4880,11 @@ body.RIXIN .navigation > ul > li.rixin-language-nav > .sub-menu li a:hover {
 	body.RIXIN .header .navigation > ul > li.rixin-quote-item > a.button.rixin-quote-button {
 		display: flex;
 		width: 100%;
-		min-height: 4.4rem;
+		min-height: 4.8rem;
 		margin-top: 0;
-		padding: 0 1.6rem;
+		padding: 0 1.8rem;
+		font-size: 1.3rem;
+		letter-spacing: 0.025em;
 	}
 }
 
@@ -5061,7 +5090,7 @@ body.RIXIN .rixin-capabilities-hero p{
 }
 body.RIXIN .rixin-capabilities-service-panel{
 	background: #ffffff;
-	padding: 7.5rem 0;
+	padding: var(--rixin-space-section-desktop) 0;
 }
 body.RIXIN .rixin-service-panel-layout{
 	display: grid;
@@ -5261,7 +5290,7 @@ body.RIXIN .rixin-service-panel-card:hover .rixin-service-panel-media img{
 }
 body.RIXIN .rixin-process-flow{
 	background: #ffffff;
-	padding: 7.5rem 0;
+	padding: var(--rixin-space-section-desktop) 0;
 }
 body.RIXIN .rixin-process-flow h2,
 body.RIXIN .rixin-tooling-matrix h2,
@@ -5393,7 +5422,7 @@ body.RIXIN .rixin-process-link:hover{
 }
 body.RIXIN .rixin-tooling-matrix{
 	background: #f6f8fb;
-	padding: 7rem 0;
+	padding: var(--rixin-space-section-desktop) 0;
 }
 body.RIXIN .rixin-tooling-grid{
 	display: grid;
@@ -5439,7 +5468,7 @@ body.RIXIN .rixin-tooling-card p{
 }
 body.RIXIN .rixin-qc-section{
 	background: #071522;
-	padding: 7rem 0;
+	padding: var(--rixin-space-section-desktop) 0;
 	color: #ffffff;
 	scroll-margin-top: 12rem;
 }
@@ -5510,7 +5539,7 @@ body.RIXIN .rixin-qc-equipment ul{
 }
 body.RIXIN .rixin-capabilities-cta{
 	background: #ffffff;
-	padding: 6.5rem 0;
+	padding: var(--rixin-space-section-desktop) 0;
 }
 body.RIXIN .rixin-capabilities-cta h2{
 	max-width: 76rem;
@@ -5605,7 +5634,7 @@ body.RIXIN .rixin-capabilities-cta-button:hover{
 	body.RIXIN .rixin-tooling-matrix,
 	body.RIXIN .rixin-qc-section,
 	body.RIXIN .rixin-capabilities-cta{
-		padding: 5rem 0;
+		padding: var(--rixin-space-section-mobile) 0;
 	}
 	body.RIXIN .rixin-service-panel-tabs{
 		width: 100%;
@@ -5658,7 +5687,7 @@ body.RIXIN .rixin-capabilities-cta-button:hover{
 
 /* [34. RIXIN — Homepage intro split banner] */
 body.RIXIN .rixin-home-intro{
-	padding: 6rem 0 7rem;
+	padding: var(--rixin-space-section-desktop) 0;
 	background: #ffffff;
 }
 body.RIXIN .rixin-home-intro-banner{
@@ -5771,7 +5800,7 @@ body.RIXIN .rixin-home-intro-button:focus{
 /* [34. RIXIN — Manufacturing capabilities cards] */
 body.RIXIN .rixin-manufacturing-capabilities{
 	background: #f6f8fb;
-	padding: 7rem 0;
+	padding: var(--rixin-space-section-desktop) 0;
 }
 body.RIXIN .rixin-capabilities-header{
 	max-width: 82rem;
@@ -5890,7 +5919,7 @@ body.RIXIN .rixin-capability-card-body a:hover span{
 
 @media only screen and (max-width: 600px) {
 	body.RIXIN .rixin-manufacturing-capabilities{
-		padding: 5rem 0;
+		padding: var(--rixin-space-section-mobile) 0;
 	}
 	body.RIXIN .rixin-capabilities-header{
 		margin-bottom: 3.8rem;
@@ -5920,7 +5949,7 @@ body.RIXIN .rixin-capability-card-body a:hover span{
 /* [35. RIXIN — Our advantages icon grid] */
 body.RIXIN .rixin-advantages{
 	background: #ffffff;
-	padding: 6.5rem 0;
+	padding: var(--rixin-space-section-desktop) 0;
 }
 body.RIXIN .rixin-advantages h2{
 	margin: 0 0 5rem;
@@ -5993,7 +6022,7 @@ body.RIXIN .rixin-advantage-card p{
 
 @media only screen and (max-width: 600px) {
 	body.RIXIN .rixin-advantages{
-		padding: 4.8rem 0;
+		padding: var(--rixin-space-section-mobile) 0;
 	}
 	body.RIXIN .rixin-advantages h2{
 		margin-bottom: 3.8rem;
@@ -6017,7 +6046,7 @@ body.RIXIN .rixin-advantage-card p{
 /* [36. RIXIN — Major industries served] */
 body.RIXIN .rixin-industries-served{
 	background: #ffffff;
-	padding: 7rem 0 6.5rem;
+	padding: var(--rixin-space-section-desktop) 0;
 }
 body.RIXIN .rixin-industries-served h2{
 	margin: 0;
@@ -6123,7 +6152,7 @@ body.RIXIN .rixin-industry-card:hover .rixin-industry-link{
 
 @media only screen and (max-width: 600px) {
 	body.RIXIN .rixin-industries-served{
-		padding: 5rem 0;
+		padding: var(--rixin-space-section-mobile) 0;
 	}
 	body.RIXIN .rixin-industries-served .center > p{
 		margin-bottom: 3.2rem;
@@ -6140,7 +6169,7 @@ body.RIXIN .rixin-industry-card:hover .rixin-industry-link{
 /* [37. RIXIN — Technical insights carousel] */
 body.RIXIN .rixin-insights{
 	background: #ffffff;
-	padding: 7rem 0;
+	padding: var(--rixin-space-section-desktop) 0;
 }
 body.RIXIN .rixin-insights-title{
 	max-width: 72rem;
@@ -6246,7 +6275,7 @@ body.RIXIN .rixin-insights-nav button:focus{
 
 @media only screen and (max-width: 600px) {
 	body.RIXIN .rixin-insights{
-		padding: 5rem 0;
+		padding: var(--rixin-space-section-mobile) 0;
 	}
 	body.RIXIN .rixin-insights-title{
 		margin-bottom: 3.2rem;
@@ -6311,7 +6340,7 @@ body.RIXIN .rixin-industries-v2-hero p{
 body.RIXIN .rixin-industries-v2-quality,
 body.RIXIN .rixin-industries-v2-explorer{
 	background: #ffffff;
-	padding: 80px 0;
+	padding: var(--rixin-space-section-desktop) 0;
 }
 body.RIXIN .rixin-industries-v2-quality h2,
 body.RIXIN .rixin-industries-v2-explorer h2{
@@ -6781,7 +6810,7 @@ body.RIXIN .rixin-industries-v2-carousel-btn:disabled{
 	}
 	body.RIXIN .rixin-industries-v2-quality,
 	body.RIXIN .rixin-industries-v2-explorer{
-		padding: 5.1rem 0;
+		padding: var(--rixin-space-section-mobile) 0;
 	}
 	body.RIXIN .rixin-industries-v2-section-intro{
 		font-size: 1.5rem;
@@ -6835,7 +6864,7 @@ body.RIXIN .rixin-industries-v2-carousel-btn:disabled{
 }
 
 body.RIXIN .rixin-industries-v2-faq{
-	padding: 5.2rem 0 6.4rem;
+	padding: var(--rixin-space-section-desktop) 0;
 	background: #ffffff;
 }
 body.RIXIN .rixin-industries-v2-faq-layout{
@@ -6918,7 +6947,7 @@ body.RIXIN .rixin-industries-v2-faq-answer p{
 
 @media only screen and (max-width: 600px) {
 	body.RIXIN .rixin-industries-v2-faq{
-		padding: 4.3rem 0 5.4rem;
+		padding: var(--rixin-space-section-mobile) 0;
 	}
 	body.RIXIN .rixin-industries-v2-faq-item summary{
 		padding: 1.45rem 2rem 1.45rem 0;
@@ -6935,13 +6964,13 @@ body.RIXIN .rixin-industries-v2-faq-answer p{
 /* [39. RIXIN — CNC milling detail page] */
 body.RIXIN .rixin-cnc-detail-hero{
 	background: #ffffff;
-	padding: 12rem 0 6rem;
+	padding: var(--rixin-space-hero-top-desktop) 0 var(--rixin-space-hero-bottom-desktop);
 }
 body.RIXIN .rixin-cnc-detail-hero-grid{
 	display: grid;
 	grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
 	gap: 5.5rem;
-	align-items: center;
+	align-items: start;
 }
 body.RIXIN .rixin-cnc-detail-rating{
 	display: inline-block;
@@ -6952,12 +6981,12 @@ body.RIXIN .rixin-cnc-detail-rating{
 	line-height: 1.3;
 }
 body.RIXIN .rixin-cnc-detail-hero h1{
-	max-width: 58rem;
+	max-width: 46rem;
 	margin: 0;
 	color: var(--rixin-text);
-	font-size: clamp(4rem, 5.8vw, 7.2rem);
+	font-size: clamp(3.3rem, 4.85vw, 5.9rem);
 	font-weight: 800;
-	line-height: 1.04;
+	line-height: 1.06;
 	letter-spacing: -0.055em;
 }
 body.RIXIN .rixin-cnc-detail-hero p{
@@ -7022,12 +7051,12 @@ body.RIXIN .rixin-cnc-detail-trust span{
 body.RIXIN .rixin-cnc-detail-materials,
 body.RIXIN .rixin-cnc-detail-quality{
 	background: #f7f7f7;
-	padding: 7rem 0;
+	padding: var(--rixin-space-section-desktop) 0;
 }
 body.RIXIN .rixin-cnc-detail-tolerances,
 body.RIXIN .rixin-cnc-detail-cta{
 	background: #ffffff;
-	padding: 7rem 0;
+	padding: var(--rixin-space-section-desktop) 0;
 }
 body.RIXIN .rixin-cnc-detail-materials h2,
 body.RIXIN .rixin-cnc-detail-tolerances h2,
@@ -7222,7 +7251,11 @@ body.RIXIN .rixin-cnc-detail-cta h2{
 		grid-template-columns: 1fr;
 	}
 	body.RIXIN .rixin-cnc-detail-hero{
-		padding-top: 10rem;
+		padding-top: var(--rixin-space-hero-top-tablet);
+	}
+	body.RIXIN .rixin-cnc-detail-hero h1{
+		max-width: 42rem;
+		font-size: clamp(3rem, 8.2vw, 4.9rem);
 	}
 	body.RIXIN .rixin-cnc-material-browser aside{
 		display: none;
@@ -7235,10 +7268,15 @@ body.RIXIN .rixin-cnc-detail-cta h2{
 	body.RIXIN .rixin-cnc-detail-tolerances,
 	body.RIXIN .rixin-cnc-detail-quality,
 	body.RIXIN .rixin-cnc-detail-cta{
-		padding: 5rem 0;
+		padding: var(--rixin-space-section-mobile) 0;
+	}
+	body.RIXIN .rixin-cnc-detail-hero{
+		padding-top: var(--rixin-space-hero-top-mobile);
 	}
 	body.RIXIN .rixin-cnc-detail-hero h1{
-		font-size: clamp(3.4rem, 11vw, 4.6rem);
+		max-width: 34rem;
+		font-size: clamp(2.75rem, 8.8vw, 3.75rem);
+		line-height: 1.08;
 	}
 	body.RIXIN .rixin-cnc-detail-trust div{
 		gap: 1.8rem;

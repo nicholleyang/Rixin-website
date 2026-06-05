@@ -26,15 +26,6 @@ function changeLanguage(language) {
     setHtml('tab17', '关于我们&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;')
     setHtml('tab19', '联系我们&nbsp;&nbsp;&nbsp;')
 
-    business.innerHTML = '业务'
-    paragraph.innerHTML = '我们公司在精密模具制造领域提供全面的服务。我们的业务范围包括以下几个方面：'
-    business1.innerHTML = '原型设计'
-    business2.innerHTML = '注塑模具'
-    business3.innerHTML = '数控加工'
-    business4.innerHTML = '模具零部件'
-    business5.innerHTML = '冲压模具'
-    business6.innerHTML = '压铸模具'
-
     setHtml('companyName', '日信精密模塑有限公司')
     setHtml('footerPhone', '电话: 0411-39014829 / 0411-39014821')
     setHtml('footerEmail', '邮箱: <a href="mailto:info@rixin-dl.com">info@rixin-dl.com</a>')
@@ -60,15 +51,6 @@ function changeLanguage(language) {
     setHtml('tab17', 'About Us')
     setHtml('tab19', 'Contact')
 
-    business.innerHTML = 'Business'
-    paragraph.innerHTML = 'Our company offers a comprehensive range of services in the field of precision mold manufacturing. Our business scope encompasses the following areas:'
-    business1.innerHTML = 'Prototyping'
-    business2.innerHTML = 'Injection Molding'
-    business3.innerHTML = 'CNC Machining'
-    business4.innerHTML = 'Mould Parts'
-    business5.innerHTML = 'Stamping Die'
-    business6.innerHTML = 'Die Casting'
-
     setHtml('companyName', 'RIXIN Precision Molding')
     setHtml('footerPhone', 'Tel: 0411-39014829 / 0411-39014821')
     setHtml('footerEmail', 'Email: <a href="mailto:info@rixin-dl.com">info@rixin-dl.com</a>')
@@ -93,15 +75,6 @@ function changeLanguage(language) {
     setHtml('tab16', '射出成形');
     setHtml('tab17', '私たちについて');
     setHtml('tab19', 'お問い合わせ');
-
-    business.innerHTML = 'ビジネス';
-    paragraph.innerHTML = '当社は精密金型製造の分野で包括的なサービスを提供しています。以下の分野を事業範囲としています:';
-    business1.innerHTML = 'プロトタイピング';
-    business2.innerHTML = 'インジェクション成形';
-    business3.innerHTML = 'CNC加工';
-    business4.innerHTML = '金型パーツ';
-    business5.innerHTML = 'スタンピングダイ';
-    business6.innerHTML = 'ダイカスト';
 
     setHtml('companyName', 'RIXIN PRECISION MOLDING日新精密成形')
     setHtml('footerPhone', '電話: 0411-39014829 / 0411-39014821')
