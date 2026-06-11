@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function () {
     panels.forEach(function (panel) {
       var isActive = panel.getAttribute('data-panel') === targetKey;
       panel.classList.toggle('is-active', isActive);
-      panel.hidden = !isActive;
+      panel.setAttribute('aria-hidden', isActive ? 'false' : 'true');
     });
   }
 

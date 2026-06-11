@@ -29,42 +29,6 @@
 	<link rel="stylesheet" href="css/skin.css" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
 
-	<style>
-		.banner {
-		  position: relative;
-		  height: 400px;
-		  text-align: center;
-		  display: flex;
-		  align-items: center;
-		  justify-content: center;
-		  flex-direction: column;
-		  color: white;
-		}
-
-		.banner::before {
-		  content: "";
-		  background-image: url(images/blank.png);
-		  background-size: cover;
-		  background-position: center;
-		  position: absolute;
-		  top: 0;
-		  left: 0;
-		  width: 100%;
-		  height: 100%;
-		  opacity: 0.5;
-		}
-
-		.banner h1 {
-		  font-size: 48px;
-		  margin-bottom: 10px;
-		  color: white;
-		  font-family: Arial, sans-serif;
-		}
-
-		.banner p {
-		  font-size: 18px;
-		}
-	</style>
 </head>
 <body class="RIXIN Blog">
 
@@ -149,6 +113,10 @@
 												<p class="rixin-mega-desc" id="megaOurCultureDesc">The values that guide how we work with customers, suppliers, and teams.</p>
 											</li>
 											<li class="rixin-mega-item">
+												<a href="about-rixin.html#our-equipment">Our Equipment</a>
+												<p class="rixin-mega-desc">Wire EDM, EDM, machining centers, grinders, and inspection assets supporting precision mold manufacturing.</p>
+											</li>
+											<li class="rixin-mega-item">
 												<a href="about-rixin.html#certifications">Certifications</a>
 												<p class="rixin-mega-desc">See the quality and environmental certifications that underpin our industrial production standards.</p>
 											</li>
@@ -181,11 +149,16 @@
 			<!-- Header End -->
 
 
-			<!-- Full Width Slider Section -->
-			<div class="banner" style="background-image: url(images/bg2.jpeg);">
-				<h1 id="page4">About Us</h1>
-			</div>
-
+			<section class="rixin-about-hero" aria-labelledby="aboutHeroTitle">
+				<div class="rixin-about-hero-inner">
+					<span class="eyebrow">WHO WE ARE</span>
+					<h1 id="aboutHeroTitle">Pioneering Precision in Tooling &amp; Components Processing</h1>
+					<p>From standard mold bases to micro-tolerance custom tooling, RIXIN combines advanced machinery with rigorous quality control to empower global industrial supply chains.</p>
+					<div class="rixin-capabilities-hero-actions">
+						<a href="#our-equipment" class="button rixin-capabilities-hero-cta">Explore Our Facility</a>
+					</div>
+				</div>
+			</section>
 
 			<!-- Content -->
 			<div class="content clearfix">
@@ -276,6 +249,17 @@
 								<p id="culture4Desc">We take responsibility for our actions and outcomes, holding ourselves accountable to deliver on our commitments and drive results with a strong sense of ownership.</p>
 							</article>
 						</div>
+					</div>
+				</section>
+
+				<section id="our-equipment" class="section-block rixin-equipment">
+					<div class="rixin-equipment-inner">
+						<header class="rixin-equipment-header">
+							<p class="rixin-equipment-eyebrow">Manufacturing Assets</p>
+							<h2 class="rixin-equipment-title">Our Equipment</h2>
+							<p class="rixin-equipment-lead">Core machining, EDM, molding, and metrology assets supporting precision mold manufacturing.</p>
+						</header>
+						<div class="rixin-equipment-categories" data-equipment-root aria-live="polite"></div>
 					</div>
 				</section>
 
@@ -416,5 +400,6 @@
 	<script src="js/header-scroll.js"></script>
 	<script src="js/langblog.js"></script>
 	<script src="js/about-certifications.js"></script>
+	<script src="js/equipment-list.js"></script>
 </body>
 </html>

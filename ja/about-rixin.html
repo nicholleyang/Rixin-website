@@ -29,42 +29,6 @@
 	<link rel="stylesheet" href="../css/skin.css" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
 
-	<style>
-		.banner {
-		  position: relative;
-		  height: 400px;
-		  text-align: center;
-		  display: flex;
-		  align-items: center;
-		  justify-content: center;
-		  flex-direction: column;
-		  color: white;
-		}
-
-		.banner::before {
-		  content: "";
-		  background-image: url(../images/blank.png);
-		  background-size: cover;
-		  background-position: center;
-		  position: absolute;
-		  top: 0;
-		  left: 0;
-		  width: 100%;
-		  height: 100%;
-		  opacity: 0.5;
-		}
-
-		.banner h1 {
-		  font-size: 48px;
-		  margin-bottom: 10px;
-		  color: white;
-		  font-family: Arial, sans-serif;
-		}
-
-		.banner p {
-		  font-size: 18px;
-		}
-	</style>
 </head>
 <body class="RIXIN Blog">
 
@@ -112,7 +76,8 @@
 								<li class="contains-mega-sub-menu current">
 									<a href="about-rixin.html" id="tab17">私たちについて</a>
 									<ul class="mega-sub-menu row rixin-mega" data-mega-label="私たちについて ›">
-										<li class="rixin-mega-item"><a href="about-rixin.html#our-story" id="megaOurStory">私たちの歩み</a><p class="rixin-mega-desc" id="megaOurStoryDesc">大連での精密金型から、輸出向け一体型製造へと歩んできた沿革をご紹介します。</p></li><li class="rixin-mega-item"><a href="about-rixin.html#our-culture" id="megaOurCulture">私たちの文化</a><p class="rixin-mega-desc" id="megaOurCultureDesc">誠実、適応力、協働、責任——顧客とチームとの関わり方を支える価値観です。</p></li>
+										<li class="rixin-mega-item"><a href="about-rixin.html#our-story" id="megaOurStory">私たちの歩み</a><p class="rixin-mega-desc" id="megaOurStoryDesc">大連での精密金型から、輸出向け一体型製造へと歩んできた沿革をご紹介します。</p></li>										<li class="rixin-mega-item"><a href="about-rixin.html#our-culture" id="megaOurCulture">私たちの文化</a><p class="rixin-mega-desc" id="megaOurCultureDesc">誠実、適応力、協働、責任——顧客とチームとの関わり方を支える価値観です。</p></li>
+										<li class="rixin-mega-item"><a href="about-rixin.html#our-equipment">設備一覧</a><p class="rixin-mega-desc">ワイヤーカット、放電加工、マシニングセンター、研削・検査設備など、精密金型製造を支える設備群。</p></li>
 										<li class="rixin-mega-item"><a href="about-rixin.html#certifications">認証・品質体制</a><p class="rixin-mega-desc">量産品質と輸出案件を支える認証・品質マネジメント体制をご覧ください。</p></li>
 										<li class="rixin-mega-item"><a href="about-rixin.html#technical-insights" id="megaAboutBlog">技術インサイト</a><p class="rixin-mega-desc" id="megaAboutBlogDesc">精密加工、金型部品、輸出製造に関する技術インサイト。</p></li>
 									</ul>
@@ -140,11 +105,16 @@
 			<!-- Header End -->
 
 
-			<!-- Full Width Slider Section -->
-			<div class="banner" style="background-image: url(../images/bg2.jpeg);">
-				<h1 id="page4">私たちについて</h1>
-			</div>
-
+			<section class="rixin-about-hero" aria-labelledby="aboutHeroTitle">
+				<div class="rixin-about-hero-inner">
+					<span class="eyebrow">私たちについて</span>
+					<h1 id="aboutHeroTitle">金型・部品加工における精密の先駆け</h1>
+					<p>標準金型ベースから微細公差のカスタム金型まで、RIXIN は先進設備と厳格な品質管理でグローバル産業サプライチェーンを支えます。</p>
+					<div class="rixin-capabilities-hero-actions">
+						<a href="#our-equipment" class="button rixin-capabilities-hero-cta">設備を見る</a>
+					</div>
+				</div>
+			</section>
 
 			<!-- Content -->
 			<div class="content clearfix">
@@ -235,6 +205,17 @@
 								<p id="culture4Desc">行動と結果に責任を持ち、約束を確実に履行し、強い当事者意識で成果を推進します。</p>
 							</article>
 						</div>
+					</div>
+				</section>
+
+				<section id="our-equipment" class="section-block rixin-equipment">
+					<div class="rixin-equipment-inner">
+						<header class="rixin-equipment-header">
+							<p class="rixin-equipment-eyebrow">製造設備</p>
+							<h2 class="rixin-equipment-title">設備一覧</h2>
+							<p class="rixin-equipment-lead">精密金型製造を支える主要な加工・放電・成形・検査設備。</p>
+						</header>
+						<div class="rixin-equipment-categories" data-equipment-root aria-live="polite"></div>
 					</div>
 				</section>
 
@@ -377,5 +358,6 @@
 		<script>window.RIXIN_DEFAULT_LANG="ja";</script>
 	<script src="../js/langblog.js"></script>
 	<script src="../js/about-certifications.js"></script>
+	<script src="../js/equipment-list.js"></script>
 </body>
 </html>

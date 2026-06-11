@@ -33,26 +33,36 @@
 	<style>
 		.banner {
 		  position: relative;
-		  height: 400px;
-		  text-align: center;
+		  width: 100%;
+		  height: 80vh;
+		  min-height: 56rem;
+		  overflow: hidden;
 		  display: flex;
 		  align-items: center;
 		  justify-content: center;
-		  flex-direction: column;
+		  text-align: center;
 		  color: white;
 		}
 
-		.banner::before {
-		  content: "";
-		  background-image: url(../images/blank.png);
-		  background-size: cover;
-		  background-position: center;
+		.banner-video {
 		  position: absolute;
 		  top: 0;
 		  left: 0;
 		  width: 100%;
 		  height: 100%;
-		  opacity: 0.5;
+		  object-fit: cover;
+		}
+
+		.banner-overlay {
+		  position: absolute;
+		  inset: 0;
+		  background: rgba(0, 0, 0, 0.4);
+		}
+
+		.banner-content {
+		  position: relative;
+		  z-index: 2;
+		  padding: 0 2rem;
 		}
 
 		.banner h1 {
@@ -64,6 +74,21 @@
 
 		.banner p {
 		  font-size: 18px;
+		}
+
+		@media only screen and (max-width: 768px) {
+		  .banner {
+			height: 80vh;
+			min-height: 42rem;
+		  }
+
+		  .banner h1 {
+			font-size: 36px;
+		  }
+
+		  .banner p {
+			font-size: 16px;
+		  }
 		}
   </style>
 
@@ -148,9 +173,15 @@
 
 				<!-- Fullscreen Slider Section -->
 
-				<div class="banner" style="background-image: url(../images/bg2.jpeg);">
-					<h1 id="title1">Rixin Precision Molding</h1>
-					<p id="title2">Provides the best solving solutoins for your project</p>
+				<div class="banner">
+					<video class="banner-video" autoplay loop muted playsinline>
+						<source src="../images/hero.mp4" type="video/mp4">
+					</video>
+					<div class="banner-overlay"></div>
+					<div class="banner-content">
+						<h1 id="title1">Rixin Precision Molding</h1>
+						<p id="title2">Provides the best solving solutoins for your project</p>
+					</div>
 				</div>
 <!--				<section class="section-block featured-media tm-slider-parallax-container">-->
 <!--					<div class="tm-slider-container full-width-slider" data-featured-slider data-parallax data-scale-under="960">-->
@@ -351,7 +382,7 @@
 							<div class="rixin-industries-grid">
 								<article class="rixin-industry-card">
 									<a href="industries-v2.html">
-										<span class="rixin-industry-image"><img src="../images/tech/Precision Grinding.png" alt="医療機器部品の精密製造"></span>
+										<span class="rixin-industry-image"><img src="../images/industries/medical-homepage.png" alt="医療分野の生産ラインと精密製造"></span>
 										<span class="rixin-industry-body">
 											<span class="rixin-industry-title">医療</span>
 											<span class="rixin-industry-desc">高精度医療機器部品と手術器具用金型の開発を加速します。</span>
@@ -361,7 +392,7 @@
 								</article>
 								<article class="rixin-industry-card">
 									<a href="industries-v2.html">
-										<span class="rixin-industry-image"><img src="../images/tech/Die Casting Molds.png" alt="自動車向け精密製造"></span>
+										<span class="rixin-industry-image"><img src="../images/industries/automotive-homepage.png" alt="自動車ボディと部品の製造"></span>
 										<span class="rixin-industry-body">
 											<span class="rixin-industry-title">自動車</span>
 											<span class="rixin-industry-desc">内装部品、センサー、構造部品の試作から量産まで対応します。</span>
@@ -371,7 +402,7 @@
 								</article>
 								<article class="rixin-industry-card">
 									<a href="industries-v2.html">
-										<span class="rixin-industry-image"><img src="../images/tech/Mould Parts.png" alt="電子機器部品の試作製造"></span>
+										<span class="rixin-industry-image"><img src="../images/industries/appliances-homepage.png" alt="家電・電子部品の製造"></span>
 										<span class="rixin-industry-body">
 											<span class="rixin-industry-title">電子機器</span>
 											<span class="rixin-industry-desc">スマートデバイスや高級デスクトップ周辺機器の機能試作と高サイクル量産を支援します。</span>
@@ -381,7 +412,7 @@
 								</article>
 								<article class="rixin-industry-card">
 									<a href="industries-v2.html">
-										<span class="rixin-industry-image"><img src="../images/tech/EDM.png" alt="産業設備向け精密治工具"></span>
+										<span class="rixin-industry-image"><img src="../images/industries/industrial-homepage.jpg" alt="ギアやブラケットなど精密加工された産業用金属部品"></span>
 										<span class="rixin-industry-body">
 											<span class="rixin-industry-title">産業機器</span>
 											<span class="rixin-industry-desc">高性能産業設備と複雑な機械部品に特化した治工具ソリューションを提供します。</span>

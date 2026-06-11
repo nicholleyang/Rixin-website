@@ -1,0 +1,378 @@
+{
+  "categories": [
+    {
+      "id": "cnc-precision",
+      "name": {
+        "en": "High-Speed CNC & Precision Machining",
+        "zh": "高速 CNC 与精密加工",
+        "ja": "高速 CNC・精密加工"
+      },
+      "items": [
+        {
+          "equipment": {
+            "en": "Hartford Machining Center",
+            "zh": "哈特福德加工中心",
+            "ja": "ハートフォード マシニングセンター"
+          },
+          "model": "PRO-1000S",
+          "spec": "1000*600*510"
+        },
+        {
+          "equipment": {
+            "en": "Machining Center",
+            "zh": "加工中心",
+            "ja": "マシニングセンター"
+          },
+          "model": "VMC85B",
+          "spec": "800*500*500"
+        },
+        {
+          "equipment": {
+            "en": "Machining Center",
+            "zh": "加工中心",
+            "ja": "マシニングセンター"
+          },
+          "model": "VMC700L",
+          "spec": "700*450*500"
+        },
+        {
+          "equipment": {
+            "en": "Machining Center",
+            "zh": "加工中心",
+            "ja": "マシニングセンター"
+          },
+          "model": "VL-8IIR<4P12K-MM80A>",
+          "spec": ""
+        },
+        {
+          "equipment": {
+            "en": "Machining Center",
+            "zh": "加工中心",
+            "ja": "マシニングセンター"
+          },
+          "model": "VL-11IIR<4P12K-MM80A>",
+          "spec": ""
+        },
+        {
+          "equipment": {
+            "en": "Beijing Carving Machine",
+            "zh": "北京精雕机",
+            "ja": "北京彫刻機"
+          },
+          "model": "Carver 4006",
+          "spec": "400*400*200"
+        },
+        {
+          "equipment": {
+            "en": "High Milling Machine",
+            "zh": "高速铣床",
+            "ja": "高速フライス盤"
+          },
+          "model": "GT-665",
+          "spec": "30000rpm"
+        },
+        {
+          "equipment": {
+            "en": "CNC Turning Machine",
+            "zh": "CNC 车床",
+            "ja": "CNC 旋盤"
+          },
+          "model": "",
+          "spec": ""
+        },
+        {
+          "equipment": {
+            "en": "Carves-milling Machine",
+            "zh": "雕铣机",
+            "ja": "彫刻フライス盤"
+          },
+          "model": "650",
+          "spec": ""
+        }
+      ]
+    },
+    {
+      "id": "wire-sinker-edm",
+      "name": {
+        "en": "Wire EDM & Sinker EDM",
+        "zh": "慢走丝与电火花加工",
+        "ja": "ワイヤー・放電加工"
+      },
+      "items": [
+        {
+          "equipment": {
+            "en": "Sodick Wire-cut Machine",
+            "zh": "沙迪克慢走丝线切割机",
+            "ja": "ソディック ワイヤーカット機"
+          },
+          "model": "AD360LS",
+          "spec": "300*250*200"
+        },
+        {
+          "equipment": {
+            "en": "Sodick Wire-cut Machine",
+            "zh": "沙迪克慢走丝线切割机",
+            "ja": "ソディック ワイヤーカット機"
+          },
+          "model": "ALN600",
+          "spec": "600*400*350"
+        },
+        {
+          "equipment": {
+            "en": "Sodick Wire-cut Machine",
+            "zh": "沙迪克慢走丝线切割机",
+            "ja": "ソディック ワイヤーカット機"
+          },
+          "model": "AQ400LS",
+          "spec": "400*300*250"
+        },
+        {
+          "equipment": {
+            "en": "Mitsubishi Sinker EDM Machine",
+            "zh": "三菱电火花成形机",
+            "ja": "三菱 放電成形機"
+          },
+          "model": "EA8",
+          "spec": "300*250*300"
+        },
+        {
+          "equipment": {
+            "en": "Mitsubishi Sinker EDM Machine",
+            "zh": "三菱电火花成形机",
+            "ja": "三菱 放電成形機"
+          },
+          "model": "EA12D",
+          "spec": "400*300*300"
+        },
+        {
+          "equipment": {
+            "en": "Mitsubishi Sinker EDM Machine",
+            "zh": "三菱电火花成形机",
+            "ja": "三菱 放電成形機"
+          },
+          "model": "AQ55L",
+          "spec": "400*550*350"
+        },
+        {
+          "equipment": {
+            "en": "Mitsubishi Sinker EDM Machine",
+            "zh": "三菱电火花成形机",
+            "ja": "三菱 放電成形機"
+          },
+          "model": "EA30",
+          "spec": "300*250*250"
+        }
+      ]
+    },
+    {
+      "id": "grinding-support",
+      "name": {
+        "en": "Precision Grinding & Support Equipment",
+        "zh": "精密磨削与辅助设备",
+        "ja": "精密研削・補助設備"
+      },
+      "items": [
+        {
+          "equipment": {
+            "en": "Grinding Machine",
+            "zh": "磨床",
+            "ja": "研削盤"
+          },
+          "model": "HT-618S",
+          "spec": "150*350*250"
+        },
+        {
+          "equipment": {
+            "en": "Grinding Machine",
+            "zh": "磨床",
+            "ja": "研削盤"
+          },
+          "model": "BST-618",
+          "spec": "400*200*270"
+        },
+        {
+          "equipment": {
+            "en": "Grinding Machine",
+            "zh": "磨床",
+            "ja": "研削盤"
+          },
+          "model": "RGS-255AHD",
+          "spec": "500*250*500"
+        },
+        {
+          "equipment": {
+            "en": "Grinding Machine",
+            "zh": "磨床",
+            "ja": "研削盤"
+          },
+          "model": "GTS-4501",
+          "spec": "400*200*270"
+        },
+        {
+          "equipment": {
+            "en": "Grinding Machine",
+            "zh": "磨床",
+            "ja": "研削盤"
+          },
+          "model": "720",
+          "spec": "2000*700*250"
+        },
+        {
+          "equipment": {
+            "en": "Milling Machine",
+            "zh": "铣床",
+            "ja": "フライス盤"
+          },
+          "model": "5HA",
+          "spec": "700*370*340"
+        },
+        {
+          "equipment": {
+            "en": "Punching Machine",
+            "zh": "冲床",
+            "ja": "プレス機"
+          },
+          "model": "730",
+          "spec": "400*330*350"
+        },
+        {
+          "equipment": {
+            "en": "Saw Machine",
+            "zh": "锯床",
+            "ja": "バンドソー"
+          },
+          "model": "G4230",
+          "spec": "300*300"
+        }
+      ]
+    },
+    {
+      "id": "injection-molding",
+      "name": {
+        "en": "Injection Molding Production",
+        "zh": "注塑成型生产",
+        "ja": "射出成形生産"
+      },
+      "items": [
+        {
+          "equipment": {
+            "en": "NISSEI Injection Machine",
+            "zh": "日精注塑机",
+            "ja": "日精 射出成形機"
+          },
+          "model": "60T",
+          "spec": "300mm*300mm"
+        },
+        {
+          "equipment": {
+            "en": "Injection Machine",
+            "zh": "注塑机",
+            "ja": "射出成形機"
+          },
+          "model": "80T",
+          "spec": "350mm*350mm"
+        },
+        {
+          "equipment": {
+            "en": "Injection Machine",
+            "zh": "注塑机",
+            "ja": "射出成形機"
+          },
+          "model": "120T",
+          "spec": "400mm*400mm"
+        },
+        {
+          "equipment": {
+            "en": "Injection Machine",
+            "zh": "注塑机",
+            "ja": "射出成形機"
+          },
+          "model": "160T",
+          "spec": "510mm*510mm"
+        },
+        {
+          "equipment": {
+            "en": "Injection Machine",
+            "zh": "注塑机",
+            "ja": "射出成形機"
+          },
+          "model": "220T",
+          "spec": "450mm*450mm"
+        },
+        {
+          "equipment": {
+            "en": "Injection Machine",
+            "zh": "注塑机",
+            "ja": "射出成形機"
+          },
+          "model": "300T",
+          "spec": "720mm*720mm"
+        },
+        {
+          "equipment": {
+            "en": "Injection Machine",
+            "zh": "注塑机",
+            "ja": "射出成形機"
+          },
+          "model": "600T",
+          "spec": "900mm*900mm"
+        },
+        {
+          "equipment": {
+            "en": "Injection Machine",
+            "zh": "注塑机",
+            "ja": "射出成形機"
+          },
+          "model": "1000T",
+          "spec": "1200mm*1200mm"
+        }
+      ]
+    },
+    {
+      "id": "metrology",
+      "name": {
+        "en": "Metrology & Quality Inspection",
+        "zh": "计量与质量检测",
+        "ja": "計測・品質検査"
+      },
+      "items": [
+        {
+          "equipment": {
+            "en": "Coordinate Measuring Machine",
+            "zh": "三坐标测量机",
+            "ja": "三次元測定機"
+          },
+          "model": "686",
+          "spec": "600*800*600"
+        },
+        {
+          "equipment": {
+            "en": "Projector",
+            "zh": "投影仪",
+            "ja": "プロジェクター"
+          },
+          "model": "DC-3000",
+          "spec": "135*100*150"
+        },
+        {
+          "equipment": {
+            "en": "Tool Microscope",
+            "zh": "工具显微镜",
+            "ja": "工具顕微鏡"
+          },
+          "model": "DC-200",
+          "spec": "200*100*170"
+        },
+        {
+          "equipment": {
+            "en": "Tool Microscope",
+            "zh": "工具显微镜",
+            "ja": "工具顕微鏡"
+          },
+          "model": "176-564C",
+          "spec": ""
+        }
+      ]
+    }
+  ]
+}

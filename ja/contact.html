@@ -29,42 +29,6 @@
 	<link rel="stylesheet" href="../css/skin.css" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
 
-	<style>
-		.banner {
-		  position: relative;
-		  height: 400px;
-		  text-align: center;
-		  display: flex;
-		  align-items: center;
-		  justify-content: center;
-		  flex-direction: column;
-		  color: white;
-		}
-
-		.banner::before {
-		  content: "";
-		  background-image: url(../images/blank.png);
-		  background-size: cover;
-		  background-position: center;
-		  position: absolute;
-		  top: 0;
-		  left: 0;
-		  width: 100%;
-		  height: 100%;
-		  opacity: 0.5;
-		}
-
-		.banner h1 {
-		  font-size: 48px;
-		  margin-bottom: 10px;
-		  color: white;
-		  font-family: Arial, sans-serif;
-		}
-
-		.banner p {
-		  font-size: 18px;
-		}
-	</style>
 </head>
 <body class="RIXIN Contact">
 
@@ -138,10 +102,16 @@
 			</header>
 			<!-- Header End -->
 
-			<!-- Full Width Slider Section -->
-			<div class="banner" style="background-image: url(../images/bg2.jpeg);">
-				<h1 id="page5">Contact</h1>
-			</div>
+			<section class="rixin-contact-hero" aria-labelledby="contactHeroTitle">
+				<div class="rixin-contact-hero-inner">
+					<span class="eyebrow">お問い合わせ</span>
+					<h1 id="contactHeroTitle">RIXIN と次の精密プロジェクトを始めましょう</h1>
+					<p>進行中の案件や図面のレビューがありますか？エンジニアリングチームが迅速な製造フィードバックと業界基準に沿った見積を提供します。</p>
+					<div class="rixin-capabilities-hero-actions">
+						<a href="#rixin-contact-quote" class="button rixin-capabilities-hero-cta">RFQ を送信</a>
+					</div>
+				</div>
+			</section>
 
 			<!-- content -->
 			<div class="content clearfix">

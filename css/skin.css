@@ -3313,7 +3313,7 @@ body.RIXIN .footer .rixin-social-links a{
 }
 body.RIXIN .footer .rixin-social-links a:hover,
 body.RIXIN .footer .rixin-social-links a:focus{
-	color: var(--rixin-primary);
+	color: var(--rixin-macaron);
 	text-decoration: none;
 	transform: translateY(-1px);
 }
@@ -4398,7 +4398,13 @@ only screen and (				min-resolution: 2dppx) {
 */
 
 body.RIXIN {
-	--rixin-primary: #003366;
+	--rixin-macaron: #BDE0FE;
+	--rixin-macaron-hover: #A2D2FF;
+	--rixin-macaron-on: #1D2D44;
+	--rixin-macaron-soft: rgba(162, 210, 255, 0.15);
+	--rixin-macaron-accent: #1D2D44;
+	--rixin-primary: var(--rixin-macaron);
+	--rixin-primary-dark: var(--rixin-macaron-hover);
 	--rixin-text: #333333;
 	--rixin-muted: #666666;
 	--rixin-bg: #ffffff;
@@ -4409,6 +4415,34 @@ body.RIXIN {
 	--rixin-space-hero-bottom-desktop: 80px;
 	--rixin-space-hero-top-tablet: 11.4rem;
 	--rixin-space-hero-top-mobile: 10.2rem;
+}
+
+/* Macaron primary buttons — override timber .button:hover gray */
+body.RIXIN a.button[class*="rixin-"][class*="button"]:not(.rixin-service-panel-secondary),
+body.RIXIN .button.rixin-quote-button,
+body.RIXIN .button.rixin-capabilities-hero-cta,
+body.RIXIN .button.rixin-home-intro-button,
+body.RIXIN .button.rixin-capabilities-cta-button,
+body.RIXIN .rixin-service-panel-actions .button.rixin-service-panel-primary {
+	background-color: var(--rixin-macaron);
+	border-color: var(--rixin-macaron);
+	color: var(--rixin-macaron-on) !important;
+}
+body.RIXIN a.button[class*="rixin-"][class*="button"]:not(.rixin-service-panel-secondary):hover,
+body.RIXIN a.button[class*="rixin-"][class*="button"]:not(.rixin-service-panel-secondary):focus,
+body.RIXIN .button.rixin-quote-button:hover,
+body.RIXIN .button.rixin-quote-button:focus,
+body.RIXIN .button.rixin-capabilities-hero-cta:hover,
+body.RIXIN .button.rixin-capabilities-hero-cta:focus,
+body.RIXIN .button.rixin-home-intro-button:hover,
+body.RIXIN .button.rixin-home-intro-button:focus,
+body.RIXIN .button.rixin-capabilities-cta-button:hover,
+body.RIXIN .button.rixin-capabilities-cta-button:focus,
+body.RIXIN .rixin-service-panel-actions .button.rixin-service-panel-primary:hover,
+body.RIXIN .rixin-service-panel-actions .button.rixin-service-panel-primary:focus {
+	background-color: var(--rixin-macaron-hover);
+	border-color: var(--rixin-macaron-hover);
+	color: var(--rixin-macaron-on) !important;
 }
 
 body.RIXIN .header .header-inner,
@@ -4464,7 +4498,7 @@ body.RIXIN .header-transparent .navigation > ul > li > a {
 body.RIXIN .header-transparent .navigation > ul > li > a:hover,
 body.RIXIN .header-transparent .navigation > ul > li.current > a,
 body.RIXIN .header-transparent .navigation > ul > li.current > a:hover {
-	color: var(--rixin-primary) !important;
+	color: var(--rixin-macaron-accent) !important;
 	opacity: 1 !important;
 }
 
@@ -4558,30 +4592,30 @@ body.RIXIN .header .navigation > ul > li.rixin-quote-item > a.button.rixin-quote
 	padding: 0 1.75rem;
 	line-height: 1;
 	border-radius: 999px;
-	border: 1px solid var(--rixin-primary);
-	background: var(--rixin-primary);
-	color: #fff !important;
+	border: 1px solid var(--rixin-macaron);
+	background: var(--rixin-macaron);
+	color: var(--rixin-macaron-on) !important;
 	font-size: 1.2rem;
 	font-weight: 700;
 	letter-spacing: 0.02em;
 	text-transform: none;
-	box-shadow: 0 8px 18px rgba(0, 51, 102, 0.14);
+	box-shadow: 0 8px 18px rgba(162, 210, 255, 0.35);
 	transition: background-color 0.2s ease, border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 body.RIXIN .header .navigation > ul > li.rixin-quote-item > a.button.rixin-quote-button:hover,
 body.RIXIN .header .navigation > ul > li.rixin-quote-item > a.button.rixin-quote-button:focus {
-	background: #0a4d88;
-	border-color: #0a4d88;
-	color: #fff !important;
+	background: var(--rixin-macaron-hover);
+	border-color: var(--rixin-macaron-hover);
+	color: var(--rixin-macaron-on) !important;
 	transform: translateY(-1px);
-	box-shadow: 0 14px 28px rgba(0, 51, 102, 0.22);
+	box-shadow: 0 14px 28px rgba(162, 210, 255, 0.45);
 }
 
 body.RIXIN .header .navigation > ul > li > a:hover,
 body.RIXIN .header .navigation > ul > li.current > a,
 body.RIXIN .header .navigation > ul > li.current > a:hover {
-	color: var(--rixin-primary);
+	color: var(--rixin-macaron-accent);
 }
 
 /* Scroll: keep white, emphasize separation */
@@ -4590,13 +4624,13 @@ body.RIXIN .header-transparent.header-scrolled .header-inner {
 	-webkit-backdrop-filter: none;
 	backdrop-filter: none;
 	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
-	border-bottom: 1px solid rgba(0, 51, 102, 0.12) !important;
+	border-bottom: 1px solid rgba(29, 45, 68, 0.12) !important;
 }
 
 body.RIXIN .header-transparent.header-scrolled .navigation > ul > li > a:hover,
 body.RIXIN .header-transparent.header-scrolled .navigation > ul > li.current > a,
 body.RIXIN .header-transparent.header-scrolled .navigation > ul > li.current > a:hover {
-	color: var(--rixin-primary) !important;
+	color: var(--rixin-macaron-accent) !important;
 }
 
 /* Mega panel positions from full nav bar */
@@ -4649,7 +4683,7 @@ body.RIXIN .navigation > ul > li.rixin-language-nav > .sub-menu li a {
 
 body.RIXIN .navigation > ul > li.rixin-language-nav > .sub-menu li:hover > a,
 body.RIXIN .navigation > ul > li.rixin-language-nav > .sub-menu li a:hover {
-	color: var(--rixin-primary) !important;
+	color: var(--rixin-macaron-accent) !important;
 	background-color: transparent !important;
 }
 
@@ -4704,7 +4738,7 @@ body.RIXIN .navigation > ul > li.rixin-language-nav > .sub-menu li a:hover {
 	body.RIXIN .navigation .sub-menu:not(.custom-content):not(.rixin-mega) li:hover > a,
 	body.RIXIN .navigation .dropdown-list:not(.custom-content) li:hover a {
 		background-color: transparent !important;
-		color: var(--rixin-primary) !important;
+		color: var(--rixin-macaron-accent) !important;
 	}
 
 	body.RIXIN .navigation > ul > li.rixin-language-nav:hover > .sub-menu {
@@ -4746,7 +4780,7 @@ body.RIXIN .navigation > ul > li.rixin-language-nav > .sub-menu li a:hover {
 		font-family: 'Lato', 'Helvetica Neue', sans-serif;
 		font-size: 1.3rem;
 		font-weight: 700;
-		color: var(--rixin-primary);
+		color: var(--rixin-macaron-accent);
 		margin: 0 0 0.5rem 0;
 		padding: 0;
 		text-align: left;
@@ -4777,7 +4811,7 @@ body.RIXIN .navigation > ul > li.rixin-language-nav > .sub-menu li a:hover {
 	}
 
 	body.RIXIN .navigation .mega-sub-menu.rixin-mega > li.rixin-mega-item:hover > a:not(.button) {
-		color: var(--rixin-primary) !important;
+		color: var(--rixin-macaron-accent) !important;
 		background: none !important;
 	}
 
@@ -4938,7 +4972,7 @@ body.RIXIN .industries-nav a::before{
 }
 body.RIXIN .industries-nav li.active > a,
 body.RIXIN .industries-nav li.is-active > a{
-	color: var(--rixin-primary);
+	color: var(--rixin-macaron-accent);
 }
 body.RIXIN .industries-nav li.active > a::before,
 body.RIXIN .industries-nav li.is-active > a::before{
@@ -4946,8 +4980,8 @@ body.RIXIN .industries-nav li.is-active > a::before{
 	opacity: 1;
 }
 body.RIXIN .industries-nav a:hover{
-	color: var(--rixin-primary);
-	background-color: rgba(0, 51, 102, 0.04);
+	color: var(--rixin-macaron-accent);
+	background-color: rgba(29, 45, 68, 0.04);
 }
 body.RIXIN .industries-content{
 	min-width: 0;
@@ -4995,13 +5029,13 @@ body.RIXIN .industries-back-to-top{
 	z-index: 120;
 	border: 0;
 	border-radius: 999px;
-	background: var(--rixin-primary);
-	color: #fff;
+	background: var(--rixin-macaron);
+	color: var(--rixin-macaron-on);
 	padding: 1rem 1.4rem;
 	font-size: 1.3rem;
 	font-weight: 700;
 	line-height: 1;
-	box-shadow: 0 8px 22px rgba(0, 51, 102, 0.22);
+	box-shadow: 0 8px 22px rgba(162, 210, 255, 0.35);
 	cursor: pointer;
 	opacity: 0;
 	visibility: hidden;
@@ -5014,7 +5048,7 @@ body.RIXIN .industries-back-to-top.is-visible{
 	transform: translateY(0);
 }
 body.RIXIN .industries-back-to-top:hover{
-	background: #0a457d;
+	background: var(--rixin-macaron-hover);
 }
 
 @media only screen and (max-width: 960px) {
@@ -5039,7 +5073,10 @@ body.RIXIN .industries-back-to-top:hover{
 }
 
 /* [33. RIXIN — Capabilities detail page] */
-body.RIXIN .rixin-capabilities-hero{
+body.RIXIN .rixin-capabilities-hero,
+body.RIXIN .rixin-industries-v2-hero,
+body.RIXIN .rixin-about-hero,
+body.RIXIN .rixin-contact-hero{
 	position: relative;
 	display: flex;
 	align-items: center;
@@ -5047,46 +5084,97 @@ body.RIXIN .rixin-capabilities-hero{
 	min-height: 56rem;
 	padding: 12rem 2rem 8rem;
 	overflow: hidden;
-	background:
-		linear-gradient(90deg, rgba(3, 18, 36, 0.84), rgba(3, 18, 36, 0.5)),
-		url("../images/tech/Mould Parts.png") center/cover no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
 	color: #ffffff;
 	text-align: center;
 }
-body.RIXIN .rixin-capabilities-hero-inner{
+body.RIXIN .rixin-capabilities-hero{
+	background-image:
+		linear-gradient(180deg, rgba(10, 25, 47, 0.85) 0%, rgba(2, 12, 27, 0.9) 100%),
+		url("../images/bg2.jpeg");
+}
+body.RIXIN .rixin-industries-v2-hero,
+body.RIXIN .rixin-about-hero,
+body.RIXIN .rixin-contact-hero{
+	background-image: url("../images/bg2.jpeg");
+}
+body.RIXIN .rixin-capabilities-hero-inner,
+body.RIXIN .rixin-industries-v2-hero-inner,
+body.RIXIN .rixin-about-hero-inner,
+body.RIXIN .rixin-contact-hero-inner{
 	position: relative;
 	z-index: 1;
-	max-width: 92rem;
+	max-width: 90rem;
 }
 body.RIXIN .rixin-capabilities-kicker,
 body.RIXIN .rixin-section-kicker{
 	display: inline-block;
 	margin-bottom: 1.4rem;
-	color: var(--rixin-primary);
+	color: var(--rixin-macaron-accent);
 	font-size: 1.2rem;
 	font-weight: 800;
 	letter-spacing: 0.16em;
 	line-height: 1.2;
 	text-transform: uppercase;
 }
-body.RIXIN .rixin-capabilities-hero .rixin-capabilities-kicker{
-	color: #8fc3f7;
+body.RIXIN .rixin-capabilities-hero .rixin-capabilities-kicker,
+body.RIXIN .rixin-industries-v2-hero .rixin-capabilities-kicker,
+body.RIXIN .rixin-about-hero .eyebrow,
+body.RIXIN .rixin-contact-hero .eyebrow{
+	margin-bottom: 0;
+	color: var(--rixin-macaron);
+	font-size: 14px;
+	font-weight: 700;
+	letter-spacing: 2px;
+	text-transform: uppercase;
 }
-body.RIXIN .rixin-capabilities-hero h1{
+body.RIXIN .rixin-capabilities-hero h1,
+body.RIXIN .rixin-industries-v2-hero h1,
+body.RIXIN .rixin-about-hero h1,
+body.RIXIN .rixin-contact-hero h1{
 	max-width: 94rem;
-	margin: 0 auto;
+	margin: 16px 0 24px 0;
 	color: #ffffff;
-	font-size: clamp(4rem, 6vw, 7.2rem);
+	font-size: clamp(48px, 5vw, 56px);
 	font-weight: 800;
-	line-height: 1.05;
-	letter-spacing: -0.045em;
+	line-height: 1.25;
+	letter-spacing: -0.02em;
 }
-body.RIXIN .rixin-capabilities-hero p{
-	max-width: 72rem;
-	margin: 2.2rem auto 0;
-	color: rgba(255, 255, 255, 0.86);
-	font-size: 1.9rem;
-	line-height: 1.65;
+body.RIXIN .rixin-capabilities-hero p,
+body.RIXIN .rixin-industries-v2-hero p,
+body.RIXIN .rixin-about-hero p,
+body.RIXIN .rixin-contact-hero p{
+	max-width: 800px;
+	margin: 0 auto;
+	color: #d1d5db;
+	font-size: 18px;
+	line-height: 1.6;
+}
+body.RIXIN .rixin-capabilities-hero-actions{
+	display: flex;
+	justify-content: center;
+	margin-top: 32px;
+}
+body.RIXIN .rixin-capabilities-hero-cta{
+	margin: 0;
+	padding: 14px 28px;
+	border-radius: 4px;
+	background: var(--rixin-macaron);
+	border-color: var(--rixin-macaron);
+	color: var(--rixin-macaron-on);
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 1.2;
+	text-transform: none;
+	transition: background-color 0.25s ease, border-color 0.25s ease;
+}
+body.RIXIN .rixin-capabilities-hero-cta:hover,
+body.RIXIN .rixin-capabilities-hero-cta:focus{
+	background: var(--rixin-macaron-hover);
+	border-color: var(--rixin-macaron-hover);
+	color: var(--rixin-macaron-on);
 }
 body.RIXIN .rixin-capabilities-service-panel{
 	background: #ffffff;
@@ -5096,43 +5184,47 @@ body.RIXIN .rixin-service-panel-layout{
 	display: grid;
 	grid-template-columns: 27rem minmax(0, 1fr);
 	gap: 4rem;
-	align-items: stretch;
+	align-items: start;
 }
 body.RIXIN .rixin-service-panel-menu{
 	display: flex;
 	flex-direction: column;
-	min-height: 38rem;
+	min-height: 0;
 	padding-top: 0.6rem;
 }
 body.RIXIN .rixin-service-panel-tabs{
-	display: inline-flex;
-	gap: 0.4rem;
+	display: flex;
+	width: 100%;
+	gap: 0;
 	margin-bottom: 3rem;
-	padding: 0.45rem;
-	background: #020d3f;
+	padding: 0;
+	background: var(--rixin-macaron);
 	border-radius: 999px;
-	box-shadow: 0 1rem 2.4rem rgba(2, 13, 63, 0.16);
+	box-shadow: 0 1rem 2.4rem rgba(162, 210, 255, 0.35);
 }
 body.RIXIN .rixin-service-panel-tabs span{
-	display: inline-flex;
+	display: flex;
 	align-items: center;
 	justify-content: center;
-	min-width: 10rem;
+	flex: 1;
+	width: 100%;
+	min-width: 0;
 	padding: 1.1rem 1.8rem;
 	border-radius: 999px;
-	color: #ffffff;
+	background: transparent;
+	color: var(--rixin-macaron-on);
 	font-size: 1.45rem;
 	font-weight: 800;
 	line-height: 1;
 }
 body.RIXIN .rixin-service-panel-tabs span.is-active{
-	background: var(--rixin-primary);
+	background: transparent;
 }
 body.RIXIN .rixin-service-panel-list{
 	position: relative;
 	display: grid;
-	flex: 1;
-	align-content: space-between;
+	flex: 0 0 auto;
+	align-content: start;
 	gap: 2.4rem;
 	padding-left: 2.2rem;
 }
@@ -5164,10 +5256,10 @@ body.RIXIN .rixin-service-panel-list a::before{
 }
 body.RIXIN .rixin-service-panel-list a.is-active,
 body.RIXIN .rixin-service-panel-list a:hover{
-	color: var(--rixin-primary);
+	color: var(--rixin-macaron-accent);
 }
 body.RIXIN .rixin-service-panel-list a.is-active::before{
-	background: var(--rixin-primary);
+	background: transparent;
 }
 body.RIXIN .rixin-service-panel-card{
 	display: grid;
@@ -5179,7 +5271,7 @@ body.RIXIN .rixin-service-panel-card{
 	align-items: start;
 	min-height: 38rem;
 	padding: 3.2rem 3.4rem;
-	background: #e9eef8;
+	background: #ffffff;
 	border-radius: 0.8rem;
 	box-shadow: 0 1.6rem 4rem rgba(15, 35, 64, 0.14);
 }
@@ -5188,7 +5280,7 @@ body.RIXIN .rixin-service-panel-copy{
 }
 body.RIXIN .rixin-service-panel-copy h2{
 	margin: 0;
-	color: var(--rixin-primary);
+	color: var(--rixin-macaron-accent);
 	font-size: clamp(2rem, 2.05vw, 2.75rem);
 	font-weight: 900;
 	line-height: 1.18;
@@ -5250,40 +5342,42 @@ body.RIXIN .rixin-service-panel-secondary{
 body.RIXIN .rixin-service-panel-secondary:hover{
 	background: #f8fafc;
 	border-color: #f8fafc;
-	color: var(--rixin-primary);
+	color: var(--rixin-macaron-accent);
 }
 body.RIXIN .rixin-service-panel-primary{
-	background: var(--rixin-primary);
-	border-color: var(--rixin-primary);
-	color: #ffffff;
+	background: var(--rixin-macaron);
+	border-color: var(--rixin-macaron);
+	color: var(--rixin-macaron-on);
 }
-body.RIXIN .rixin-service-panel-primary:hover{
-	background: var(--rixin-primary-dark);
-	border-color: var(--rixin-primary-dark);
-	color: #ffffff;
+body.RIXIN .rixin-service-panel-actions .button.rixin-service-panel-primary:hover{
+	background-color: var(--rixin-macaron-hover);
+	border-color: var(--rixin-macaron-hover);
+	color: var(--rixin-macaron-on);
 }
 body.RIXIN .rixin-service-panel-media{
 	grid-area: media;
 	align-self: start;
-	overflow: hidden;
-	border-radius: 0.7rem;
-	background: #ffffff;
-	box-shadow: 0 1.2rem 3rem rgba(15, 35, 64, 0.12);
+	overflow: visible;
+	background: transparent;
+	box-shadow: none;
 }
 body.RIXIN .rixin-service-panel-media img{
 	display: block;
 	width: 100%;
-	aspect-ratio: 1.78 / 1;
-	object-fit: contain;
-	padding: 1.2rem;
-	background: #ffffff;
+	height: auto;
+	max-width: 100%;
+	object-fit: unset;
+	padding: 0;
+	background: transparent;
+	border-radius: 0.7rem;
 	transition: transform 0.35s ease;
 }
 body.RIXIN .rixin-service-panel-placeholder{
 	display: block;
 	width: 100%;
 	aspect-ratio: 1.78 / 1;
-	background: #ffffff;
+	background: #f5f7fb;
+	border-radius: 0.7rem;
 }
 body.RIXIN .rixin-service-panel-card:hover .rixin-service-panel-media img{
 	transform: scale(1.045);
@@ -5316,7 +5410,7 @@ body.RIXIN .rixin-process-item{
 	gap: 4.8rem;
 	align-items: center;
 	padding: 4rem 0;
-	border-top: 1px solid rgba(0, 51, 102, 0.08);
+	border-top: 1px solid rgba(29, 45, 68, 0.08);
 	scroll-margin-top: 12rem;
 }
 body.RIXIN .rixin-process-item:first-child{
@@ -5347,7 +5441,7 @@ body.RIXIN .rixin-process-item:hover .rixin-process-media img{
 body.RIXIN .rixin-process-label{
 	display: block;
 	margin-bottom: 1rem;
-	color: var(--rixin-primary);
+	color: var(--rixin-macaron-accent);
 	font-size: 1.25rem;
 	font-weight: 800;
 	letter-spacing: 0.12em;
@@ -5410,13 +5504,13 @@ body.RIXIN .rixin-process-link{
 	align-items: center;
 	gap: 0.45rem;
 	margin-top: 2.4rem;
-	color: var(--rixin-primary);
+	color: var(--rixin-macaron-accent);
 	font-size: 1.35rem;
 	font-weight: 800;
 	line-height: 1.3;
 }
 body.RIXIN .rixin-process-link:hover{
-	color: var(--rixin-primary-dark);
+	color: var(--rixin-macaron-accent);
 	text-decoration: underline;
 	text-underline-offset: 0.25em;
 }
@@ -5434,7 +5528,7 @@ body.RIXIN .rixin-tooling-card{
 	flex-direction: column;
 	min-height: 100%;
 	background: #ffffff;
-	border: 1px solid rgba(0, 51, 102, 0.08);
+	border: 1px solid rgba(29, 45, 68, 0.08);
 	border-radius: 1rem;
 	overflow: hidden;
 	box-shadow: 0 1rem 2.8rem rgba(15, 35, 64, 0.07);
@@ -5488,7 +5582,7 @@ body.RIXIN .rixin-qc-report{
 body.RIXIN .rixin-qc-report > span{
 	display: inline-block;
 	margin-bottom: 1.4rem;
-	color: var(--rixin-primary);
+	color: var(--rixin-macaron-accent);
 	font-size: 1.2rem;
 	font-weight: 800;
 	letter-spacing: 0.14em;
@@ -5509,7 +5603,7 @@ body.RIXIN .rixin-qc-report li{
 	justify-content: space-between;
 	gap: 1.6rem;
 	padding: 1.3rem 0;
-	border-top: 1px solid rgba(0, 51, 102, 0.1);
+	border-top: 1px solid rgba(29, 45, 68, 0.1);
 	color: var(--rixin-muted);
 	font-size: 1.45rem;
 	line-height: 1.5;
@@ -5546,15 +5640,15 @@ body.RIXIN .rixin-capabilities-cta h2{
 	margin: 0 auto 2.8rem;
 }
 body.RIXIN .rixin-capabilities-cta-button{
-	background: var(--rixin-primary);
-	border-color: var(--rixin-primary);
-	color: #ffffff;
+	background: var(--rixin-macaron);
+	border-color: var(--rixin-macaron);
+	color: var(--rixin-macaron-on);
 	font-weight: 800;
 }
 body.RIXIN .rixin-capabilities-cta-button:hover{
-	background: var(--rixin-primary-dark);
-	border-color: var(--rixin-primary-dark);
-	color: #ffffff;
+	background: var(--rixin-macaron-hover);
+	border-color: var(--rixin-macaron-hover);
+	color: var(--rixin-macaron-on);
 }
 
 @media only screen and (max-width: 1200px) {
@@ -5603,13 +5697,14 @@ body.RIXIN .rixin-capabilities-cta-button:hover{
 		content: none;
 	}
 	body.RIXIN .rixin-service-panel-list a{
-		padding: 1.2rem 1.4rem;
-		background: #f5f7fb;
-		border-radius: 0.6rem;
+		padding: 0;
+		background: transparent;
+		border-radius: 0;
 		font-size: 1.5rem;
 	}
 	body.RIXIN .rixin-service-panel-list a.is-active{
-		background: rgba(0, 51, 102, 0.08);
+		background: transparent;
+		color: var(--rixin-macaron-accent);
 	}
 	body.RIXIN .rixin-process-item,
 	body.RIXIN .rixin-qc-layout{
@@ -5622,12 +5717,28 @@ body.RIXIN .rixin-capabilities-cta-button:hover{
 }
 
 @media only screen and (max-width: 600px) {
-	body.RIXIN .rixin-capabilities-hero{
+	body.RIXIN .rixin-capabilities-hero,
+	body.RIXIN .rixin-industries-v2-hero,
+	body.RIXIN .rixin-about-hero,
+	body.RIXIN .rixin-contact-hero{
 		min-height: 44rem;
 		padding: 10rem 2rem 6rem;
 	}
-	body.RIXIN .rixin-capabilities-hero p{
-		font-size: 1.55rem;
+	body.RIXIN .rixin-capabilities-hero h1,
+	body.RIXIN .rixin-industries-v2-hero h1,
+	body.RIXIN .rixin-about-hero h1,
+	body.RIXIN .rixin-contact-hero h1{
+		font-size: clamp(36px, 8vw, 48px);
+		margin: 14px 0 20px 0;
+	}
+	body.RIXIN .rixin-capabilities-hero p,
+	body.RIXIN .rixin-industries-v2-hero p,
+	body.RIXIN .rixin-about-hero p,
+	body.RIXIN .rixin-contact-hero p{
+		font-size: 16px;
+	}
+	body.RIXIN .rixin-capabilities-hero-actions{
+		margin-top: 28px;
 	}
 	body.RIXIN .rixin-process-flow,
 	body.RIXIN .rixin-capabilities-service-panel,
@@ -5746,21 +5857,21 @@ body.RIXIN .rixin-home-intro-button{
 	min-height: 4.2rem;
 	padding: 0 1.8rem;
 	border-radius: 0.4rem;
-	background: var(--rixin-primary);
-	color: #ffffff;
+	background: var(--rixin-macaron);
+	color: var(--rixin-macaron-on);
 	font-size: 1.05rem;
 	font-weight: 700;
 	letter-spacing: 0.02em;
 	text-transform: none;
-	box-shadow: 0 12px 26px rgba(0, 51, 102, 0.16);
+	box-shadow: 0 12px 26px rgba(162, 210, 255, 0.35);
 	transition: background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
 }
 body.RIXIN .rixin-home-intro-button:hover,
 body.RIXIN .rixin-home-intro-button:focus{
-	background: #0a457d;
-	color: #ffffff;
+	background: var(--rixin-macaron-hover);
+	color: var(--rixin-macaron-on);
 	transform: translateY(-1px);
-	box-shadow: 0 14px 32px rgba(0, 51, 102, 0.2);
+	box-shadow: 0 14px 32px rgba(162, 210, 255, 0.45);
 }
 @media only screen and (max-width: 1200px) {
 	body.RIXIN .rixin-home-intro-copy{
@@ -5842,7 +5953,7 @@ body.RIXIN .rixin-capability-card{
 	flex-direction: column;
 	min-height: 100%;
 	background: #ffffff;
-	border: 1px solid rgba(0, 51, 102, 0.08);
+	border: 1px solid rgba(29, 45, 68, 0.08);
 	border-radius: 1rem;
 	box-shadow: 0 10px 28px rgba(15, 35, 64, 0.06);
 	overflow: hidden;
@@ -5850,7 +5961,7 @@ body.RIXIN .rixin-capability-card{
 }
 body.RIXIN .rixin-capability-card:hover{
 	transform: translateY(-0.4rem);
-	border-color: rgba(0, 51, 102, 0.18);
+	border-color: rgba(29, 45, 68, 0.18);
 	box-shadow: 0 18px 40px rgba(15, 35, 64, 0.12);
 }
 body.RIXIN .rixin-capability-card img{
@@ -5894,13 +6005,13 @@ body.RIXIN .rixin-capability-card-body li:last-child{
 body.RIXIN .rixin-capability-card-body a{
 	align-self: flex-start;
 	margin-top: auto;
-	color: var(--rixin-primary);
+	color: var(--rixin-macaron-accent);
 	font-size: 1.25rem;
 	font-weight: 700;
 	letter-spacing: 0.02em;
 }
 body.RIXIN .rixin-capability-card-body a:hover{
-	color: #0a457d;
+	color: var(--rixin-macaron-accent);
 }
 body.RIXIN .rixin-capability-card-body a span{
 	display: inline-block;
@@ -5951,6 +6062,20 @@ body.RIXIN .rixin-advantages{
 	background: #ffffff;
 	padding: var(--rixin-space-section-desktop) 0;
 }
+body.RIXIN .rixin-capabilities-value .rixin-capabilities-value-intro{
+	max-width: 86rem;
+	margin: 1.8rem auto 0;
+	color: var(--rixin-muted);
+	font-size: 1.7rem;
+	line-height: 1.75;
+	text-align: center;
+}
+body.RIXIN .rixin-capabilities-value h2{
+	margin: 0 0 0;
+}
+body.RIXIN .rixin-capabilities-value .rixin-advantages-grid{
+	margin-top: 5rem;
+}
 body.RIXIN .rixin-advantages h2{
 	margin: 0 0 5rem;
 	color: var(--rixin-text);
@@ -5987,7 +6112,7 @@ body.RIXIN .rixin-advantage-icon{
 	margin-bottom: 1.8rem;
 	border: 0;
 	border-radius: 0;
-	color: var(--rixin-primary);
+	color: var(--rixin-macaron-accent);
 	font-size: 3.8rem;
 	line-height: 1;
 }
@@ -6023,6 +6148,13 @@ body.RIXIN .rixin-advantage-card p{
 @media only screen and (max-width: 600px) {
 	body.RIXIN .rixin-advantages{
 		padding: var(--rixin-space-section-mobile) 0;
+	}
+	body.RIXIN .rixin-capabilities-value .rixin-capabilities-value-intro{
+		margin-top: 1.4rem;
+		font-size: 1.5rem;
+	}
+	body.RIXIN .rixin-capabilities-value .rixin-advantages-grid{
+		margin-top: 3.8rem;
 	}
 	body.RIXIN .rixin-advantages h2{
 		margin-bottom: 3.8rem;
@@ -6131,14 +6263,14 @@ body.RIXIN .rixin-industry-link{
 	align-items: center;
 	gap: 0.4rem;
 	margin-top: auto;
-	color: var(--rixin-primary);
+	color: var(--rixin-macaron-accent);
 	font-size: 1.35rem;
 	font-weight: 800;
 	line-height: 1.3;
 	transition: color 0.2s ease;
 }
 body.RIXIN .rixin-industry-card:hover .rixin-industry-link{
-	color: var(--rixin-primary-dark);
+	color: var(--rixin-macaron-accent);
 	text-decoration: underline;
 	text-underline-offset: 0.25em;
 }
@@ -6232,7 +6364,7 @@ body.RIXIN .rixin-insight-meta span:first-child{
 }
 body.RIXIN .rixin-insight-meta span:last-child{
 	flex: 0 0 auto;
-	color: var(--rixin-primary);
+	color: var(--rixin-macaron-accent);
 	font-size: 1.4rem;
 	line-height: 1;
 }
@@ -6259,8 +6391,8 @@ body.RIXIN .rixin-insights-nav button{
 }
 body.RIXIN .rixin-insights-nav button:hover,
 body.RIXIN .rixin-insights-nav button:focus{
-	background: var(--rixin-primary);
-	color: #ffffff;
+	background: var(--rixin-macaron);
+	color: var(--rixin-macaron-on);
 	transform: translateY(-1px);
 }
 
@@ -6290,53 +6422,6 @@ body.RIXIN .rixin-insights-nav button:focus{
 }
 
 /* [38. RIXIN — Industries V2 detail page] */
-body.RIXIN .rixin-industries-v2-hero{
-	position: relative;
-	overflow: hidden;
-	padding: 15rem 0 9rem;
-	background: #0e131a url("../images/industries-v2/gallery-reference.png") center/cover no-repeat;
-	color: #ffffff;
-	text-align: center;
-}
-body.RIXIN .rixin-industries-v2-hero-overlay{
-	position: absolute;
-	inset: 0;
-	background: linear-gradient(135deg, rgba(7, 11, 17, 0.84), rgba(11, 17, 25, 0.65));
-}
-body.RIXIN .rixin-industries-v2-hero .row{
-	position: relative;
-	z-index: 1;
-}
-body.RIXIN .rixin-industries-v2-kicker{
-	display: inline-block;
-	margin-bottom: 1.6rem;
-	padding: 0.7rem 1.3rem;
-	background: rgba(255, 255, 255, 0.12);
-	border: 1px solid rgba(255, 255, 255, 0.26);
-	border-radius: 999px;
-	color: #dce8f5;
-	font-size: 1.2rem;
-	font-weight: 800;
-	letter-spacing: 0.16em;
-	text-transform: uppercase;
-	line-height: 1.2;
-}
-body.RIXIN .rixin-industries-v2-hero h1{
-	max-width: 98rem;
-	margin: 0 auto;
-	color: #ffffff;
-	font-size: clamp(4rem, 6vw, 7.2rem);
-	font-weight: 800;
-	line-height: 1.06;
-	letter-spacing: -0.04em;
-}
-body.RIXIN .rixin-industries-v2-hero p{
-	max-width: 86rem;
-	margin: 2.2rem auto 0;
-	color: rgba(255, 255, 255, 0.86);
-	font-size: 1.85rem;
-	line-height: 1.7;
-}
 body.RIXIN .rixin-industries-v2-quality,
 body.RIXIN .rixin-industries-v2-explorer{
 	background: #ffffff;
@@ -6377,7 +6462,11 @@ body.RIXIN .rixin-industries-v2-card img{
 	display: block;
 	width: 100%;
 	aspect-ratio: 1.4 / 1;
-	object-fit: cover;
+	object-fit: contain;
+	object-position: center;
+	background: #fff;
+	padding: 3rem 2.4rem;
+	box-sizing: border-box;
 }
 body.RIXIN .rixin-industries-v2-card-body{
 	padding: 2.4rem 2.2rem 2.6rem;
@@ -6408,8 +6497,17 @@ body.RIXIN .rixin-industries-v2-card li + li{
 body.RIXIN .rixin-industries-v2-explorer-layout{
 	display: flex;
 	flex-direction: column;
-	gap: 2rem;
+	gap: 0;
 	margin-top: 4.2rem;
+}
+body.RIXIN .rixin-industries-v2-tab-content{
+	margin-top: 40px;
+	margin-bottom: 80px;
+	padding: 60px 50px;
+	background: #f8f9fa;
+	border: 1px solid #eef0f3;
+	border-radius: 8px;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
 }
 body.RIXIN .rixin-industries-v2-topbar{
 	width: 100%;
@@ -6455,32 +6553,38 @@ body.RIXIN .rixin-industries-v2-tab::before{
 body.RIXIN .rixin-industries-v2-tab:hover{
 	transform: translateY(-1px);
 	background: #ffffff;
-	border-color: rgba(12, 106, 190, 0.35);
-	box-shadow: 0 0.8rem 1.8rem rgba(18, 41, 66, 0.1);
+	border-color: rgba(162, 210, 255, 0.55);
+	box-shadow: 0 0.8rem 1.8rem rgba(162, 210, 255, 0.2);
 }
 body.RIXIN .rixin-industries-v2-tab.is-active{
-	background: linear-gradient(135deg, #163e63 0%, #0b5a92 100%);
-	border-color: rgba(8, 68, 114, 0.7);
-	color: #ffffff;
+	background: var(--rixin-macaron);
+	border-color: var(--rixin-macaron-hover);
+	color: var(--rixin-macaron-on);
 	font-weight: 800;
-	box-shadow: 0 1rem 2rem rgba(10, 56, 93, 0.28);
+	box-shadow: 0 1rem 2rem rgba(162, 210, 255, 0.35);
 }
 body.RIXIN .rixin-industries-v2-tab.is-active::before{
-	background: rgba(255, 255, 255, 0.9);
+	background: var(--rixin-macaron-on);
 }
 body.RIXIN .rixin-industries-v2-panels{
 	position: relative;
-	min-height: 30rem;
 	width: 100%;
 }
 body.RIXIN .rixin-industries-v2-panel{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
 	opacity: 0;
+	visibility: hidden;
 	transform: translateY(0.6rem);
-	transition: opacity 0.28s ease, transform 0.28s ease;
+	transition: opacity 0.28s ease, transform 0.28s ease, visibility 0.28s ease;
 	pointer-events: none;
 }
 body.RIXIN .rixin-industries-v2-panel.is-active{
+	position: relative;
 	opacity: 1;
+	visibility: visible;
 	transform: translateY(0);
 	pointer-events: auto;
 }
@@ -6609,9 +6713,14 @@ body.RIXIN .rixin-industries-v2-ms-card li{
 body.RIXIN .rixin-industries-v2-ms-card li + li{
 	margin-top: 0.3rem;
 }
-body.RIXIN .rixin-industries-v2-ms-card strong{
-	color: #1d5f96;
-	font-weight: 800;
+body.RIXIN .rixin-industries-v2-ms-card strong,
+body.RIXIN .rixin-industries-v2-ms-card li strong{
+	display: inline;
+	padding: 0.2rem 0.65rem;
+	background: var(--rixin-macaron-soft);
+	border-radius: 4px;
+	color: var(--rixin-macaron-accent);
+	font-weight: 700;
 }
 body.RIXIN .rixin-industries-v2-tags{
 	display: flex;
@@ -6623,11 +6732,11 @@ body.RIXIN .rixin-industries-v2-tags span{
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
-	padding: 0.45rem 1.2rem;
-	background: #eaf0f7;
-	border: 1px solid #d5deea;
-	border-radius: 999px;
-	color: #1f2f45;
+	padding: 0.2rem 0.65rem;
+	background: var(--rixin-macaron-soft);
+	border: none;
+	border-radius: 4px;
+	color: var(--rixin-macaron-accent);
 	font-size: 1.2rem;
 	font-weight: 700;
 	letter-spacing: 0.02em;
@@ -6758,8 +6867,8 @@ body.RIXIN .rixin-industries-v2-carousel-btn{
 	transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
 }
 body.RIXIN .rixin-industries-v2-carousel-btn:hover{
-	background: var(--rixin-primary);
-	color: #ffffff;
+	background: var(--rixin-macaron);
+	color: var(--rixin-macaron-on);
 	transform: translateY(-1px);
 }
 body.RIXIN .rixin-industries-v2-carousel-btn:disabled{
@@ -6801,16 +6910,22 @@ body.RIXIN .rixin-industries-v2-carousel-btn:disabled{
 	}
 }
 
+@media only screen and (max-width: 960px) {
+	body.RIXIN .rixin-industries-v2-tab-content{
+		padding: 40px 28px;
+		margin-bottom: 48px;
+	}
+}
+
 @media only screen and (max-width: 600px) {
-	body.RIXIN .rixin-industries-v2-hero{
-		padding: 11.5rem 0 6.2rem;
-	}
-	body.RIXIN .rixin-industries-v2-hero p{
-		font-size: 1.55rem;
-	}
 	body.RIXIN .rixin-industries-v2-quality,
 	body.RIXIN .rixin-industries-v2-explorer{
 		padding: var(--rixin-space-section-mobile) 0;
+	}
+	body.RIXIN .rixin-industries-v2-tab-content{
+		padding: 32px 24px;
+		margin-top: 32px;
+		margin-bottom: 48px;
 	}
 	body.RIXIN .rixin-industries-v2-section-intro{
 		font-size: 1.5rem;
@@ -7542,6 +7657,171 @@ body.RIXIN .rixin-our-culture-item p{
 	body.RIXIN .rixin-our-culture-grid{
 		grid-template-columns: 1fr;
 		gap: 2.5rem;
+	}
+}
+
+/* About page: Equipment list */
+body.RIXIN .rixin-equipment{
+	padding: var(--rixin-space-section-desktop) 2rem;
+	background: #fafbfc;
+}
+body.RIXIN .rixin-equipment-inner{
+	max-width: 980px;
+	margin: 0 auto;
+}
+body.RIXIN .rixin-equipment-header{
+	max-width: 680px;
+	margin: 0 auto 5rem;
+	text-align: center;
+}
+body.RIXIN .rixin-equipment-eyebrow{
+	margin: 0 0 1rem;
+	color: var(--rixin-macaron-accent);
+	font-size: 1.2rem;
+	font-weight: 800;
+	letter-spacing: 0.16em;
+	text-transform: uppercase;
+}
+body.RIXIN .rixin-equipment-title{
+	margin: 0 0 1.2rem;
+	color: var(--rixin-text);
+	font-size: clamp(2.6rem, 4vw, 3.6rem);
+	font-weight: 900;
+	line-height: 1.2;
+}
+body.RIXIN .rixin-equipment-lead{
+	margin: 0;
+	color: var(--rixin-muted);
+	font-size: 1.4rem;
+	line-height: 1.7;
+}
+body.RIXIN .rixin-equipment-categories{
+	display: block;
+}
+body.RIXIN .rixin-equipment-accordion{
+	border-top: 1px solid #eeeeee;
+}
+body.RIXIN .rixin-equipment-item{
+	border-bottom: 1px solid #eeeeee;
+	background: #ffffff;
+}
+body.RIXIN .rixin-equipment-trigger{
+	display: flex;
+	align-items: center;
+	gap: 1.6rem;
+	width: 100%;
+	padding: 2.2rem 0;
+	border: 0;
+	background: transparent;
+	cursor: pointer;
+	text-align: left;
+	transition: color 0.2s ease;
+}
+body.RIXIN .rixin-equipment-trigger:hover,
+body.RIXIN .rixin-equipment-item.is-open .rixin-equipment-trigger{
+	color: var(--rixin-macaron-accent);
+}
+body.RIXIN .rixin-equipment-toggle-icon{
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	flex-shrink: 0;
+	width: 2.4rem;
+	height: 2.4rem;
+	color: var(--rixin-macaron-accent);
+	font-size: 2rem;
+	font-weight: 300;
+	line-height: 1;
+}
+body.RIXIN .rixin-equipment-trigger-title{
+	color: inherit;
+	font-size: clamp(1.8rem, 2.2vw, 2.4rem);
+	font-weight: 800;
+	line-height: 1.25;
+	letter-spacing: -0.02em;
+}
+body.RIXIN .rixin-equipment-panel{
+	overflow: hidden;
+}
+body.RIXIN .rixin-equipment-panel[hidden]{
+	display: none;
+}
+body.RIXIN .rixin-equipment-item.is-open .rixin-equipment-panel{
+	animation: rixin-equipment-panel-in 0.28s ease;
+}
+@keyframes rixin-equipment-panel-in{
+	from{
+		opacity: 0;
+		transform: translateY(-0.4rem);
+	}
+	to{
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+body.RIXIN .rixin-equipment-table-wrap{
+	padding: 0 0 2.4rem 4rem;
+	overflow-x: auto;
+	-webkit-overflow-scrolling: touch;
+}
+body.RIXIN .rixin-equipment-table{
+	width: 100%;
+	border-collapse: collapse;
+	color: var(--rixin-text);
+	font-size: 1.3rem;
+	line-height: 1.55;
+}
+body.RIXIN .rixin-equipment-table thead th{
+	padding: 1rem 1.2rem 1rem 0;
+	border-bottom: 1px solid #eeeeee;
+	color: #6b7280;
+	font-size: 1.15rem;
+	font-weight: 700;
+	letter-spacing: 0.04em;
+	text-align: left;
+	text-transform: uppercase;
+}
+body.RIXIN .rixin-equipment-table tbody td{
+	padding: 1.15rem 1.2rem 1.15rem 0;
+	border-bottom: 1px solid #eeeeee;
+	vertical-align: top;
+}
+body.RIXIN .rixin-equipment-table tbody tr:last-child td{
+	border-bottom: 0;
+}
+body.RIXIN .rixin-equipment-table tbody td:first-child{
+	font-weight: 600;
+}
+body.RIXIN .rixin-equipment-spec{
+	font-variant-numeric: tabular-nums;
+	font-feature-settings: "tnum" 1;
+	letter-spacing: 0.02em;
+	white-space: nowrap;
+}
+body.RIXIN .rixin-equipment-error{
+	margin: 0;
+	padding: 2rem;
+	text-align: center;
+	color: var(--rixin-muted);
+	font-size: 1.4rem;
+}
+
+@media only screen and (max-width: 600px) {
+	body.RIXIN .rixin-equipment{
+		padding: var(--rixin-space-section-mobile) 2rem;
+	}
+	body.RIXIN .rixin-equipment-header{
+		margin-bottom: 3.5rem;
+	}
+	body.RIXIN .rixin-equipment-trigger{
+		padding: 1.8rem 0;
+		gap: 1.2rem;
+	}
+	body.RIXIN .rixin-equipment-table-wrap{
+		padding: 0 0 2rem 3.6rem;
+	}
+	body.RIXIN .rixin-equipment-spec{
+		white-space: normal;
 	}
 }
 

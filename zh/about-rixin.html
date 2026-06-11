@@ -29,42 +29,6 @@
 	<link rel="stylesheet" href="../css/skin.css" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
 
-	<style>
-		.banner {
-		  position: relative;
-		  height: 400px;
-		  text-align: center;
-		  display: flex;
-		  align-items: center;
-		  justify-content: center;
-		  flex-direction: column;
-		  color: white;
-		}
-
-		.banner::before {
-		  content: "";
-		  background-image: url(../images/blank.png);
-		  background-size: cover;
-		  background-position: center;
-		  position: absolute;
-		  top: 0;
-		  left: 0;
-		  width: 100%;
-		  height: 100%;
-		  opacity: 0.5;
-		}
-
-		.banner h1 {
-		  font-size: 48px;
-		  margin-bottom: 10px;
-		  color: white;
-		  font-family: Arial, sans-serif;
-		}
-
-		.banner p {
-		  font-size: 18px;
-		}
-	</style>
 </head>
 <body class="RIXIN Blog">
 
@@ -112,7 +76,8 @@
 								<li class="contains-mega-sub-menu current">
 									<a href="about-rixin.html" id="tab17">关于我们</a>
 									<ul class="mega-sub-menu row rixin-mega" data-mega-label="关于我们 ›">
-										<li class="rixin-mega-item"><a href="about-rixin.html#our-story" id="megaOurStory">我们的故事</a><p class="rixin-mega-desc" id="megaOurStoryDesc">从大连精密模具起步，到服务全球出口制造的发展历程。</p></li><li class="rixin-mega-item"><a href="about-rixin.html#our-culture" id="megaOurCulture">我们的文化</a><p class="rixin-mega-desc" id="megaOurCultureDesc">诚信、适应力、协作与担当——指引我们与客户和团队共事的方式。</p></li>
+										<li class="rixin-mega-item"><a href="about-rixin.html#our-story" id="megaOurStory">我们的故事</a><p class="rixin-mega-desc" id="megaOurStoryDesc">从大连精密模具起步，到服务全球出口制造的发展历程。</p></li>										<li class="rixin-mega-item"><a href="about-rixin.html#our-culture" id="megaOurCulture">我们的文化</a><p class="rixin-mega-desc" id="megaOurCultureDesc">诚信、适应力、协作与担当——指引我们与客户和团队共事的方式。</p></li>
+										<li class="rixin-mega-item"><a href="about-rixin.html#our-equipment">我们的设备</a><p class="rixin-mega-desc">慢走丝、电火花、加工中心、磨床与检测设备等，支撑精密模具制造。</p></li>
 										<li class="rixin-mega-item"><a href="about-rixin.html#certifications">资质认证</a><p class="rixin-mega-desc">查看支撑工业量产与外贸交付的质量与环境管理认证。</p></li>
 										<li class="rixin-mega-item"><a href="about-rixin.html#technical-insights" id="megaAboutBlog">技术洞察</a><p class="rixin-mega-desc" id="megaAboutBlogDesc">精密加工、模具零部件与出口制造相关的技术解读。</p></li>
 									</ul>
@@ -133,11 +98,16 @@
 			<!-- Header End -->
 
 
-			<!-- Full Width Slider Section -->
-			<div class="banner" style="background-image: url(../images/bg2.jpeg);">
-				<h1 id="page4">关于我们</h1>
-			</div>
-
+			<section class="rixin-about-hero" aria-labelledby="aboutHeroTitle">
+				<div class="rixin-about-hero-inner">
+					<span class="eyebrow">我们是谁</span>
+					<h1 id="aboutHeroTitle">模具与零部件精密加工的先行者</h1>
+					<p>从标准模架到微米级公差定制工装，日信以先进设备与严格质控赋能全球工业供应链。</p>
+					<div class="rixin-capabilities-hero-actions">
+						<a href="#our-equipment" class="button rixin-capabilities-hero-cta">参观制造装备</a>
+					</div>
+				</div>
+			</section>
 
 			<!-- Content -->
 			<div class="content clearfix">
@@ -228,6 +198,17 @@
 								<p id="culture4Desc">我们对行动与结果负责，以强烈的主人翁意识兑现承诺，推动项目取得切实成果。</p>
 							</article>
 						</div>
+					</div>
+				</section>
+
+				<section id="our-equipment" class="section-block rixin-equipment">
+					<div class="rixin-equipment-inner">
+						<header class="rixin-equipment-header">
+							<p class="rixin-equipment-eyebrow">制造装备</p>
+							<h2 class="rixin-equipment-title">我们的设备</h2>
+							<p class="rixin-equipment-lead">支撑精密模具制造的核心加工、电火花、成型与检测设备。</p>
+						</header>
+						<div class="rixin-equipment-categories" data-equipment-root aria-live="polite"></div>
 					</div>
 				</section>
 
@@ -370,5 +351,6 @@
 		<script>window.RIXIN_DEFAULT_LANG="zh";</script>
 	<script src="../js/langblog.js"></script>
 	<script src="../js/about-certifications.js"></script>
+	<script src="../js/equipment-list.js"></script>
 </body>
 </html>

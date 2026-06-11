@@ -34,7 +34,7 @@ jobs:
           mkdir -p _site
           cp -R index.html about-rixin.html capabilities.html contact.html industries.html industries-v2.html thank-you.html _site/
           cp -R blog zh ja _site/
-          cp -R css js images fonts documents mediaelement _site/
+          cp -R css js images fonts documents mediaelement data _site/
           cp -R php _site/
           cp -R robots.txt sitemap.xml .htaccess _site/
 
